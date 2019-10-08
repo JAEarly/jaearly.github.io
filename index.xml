@@ -6,9 +6,37 @@
     <description>Recent content on Joseph Early</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
+    <lastBuildDate>Tue, 08 Oct 2019 15:03:30 +0100</lastBuildDate>
     
 	<atom:link href="https://jaearly.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Contact</title>
+      <link>https://jaearly.github.io/contact/</link>
+      <pubDate>Tue, 08 Oct 2019 15:03:30 +0100</pubDate>
+      
+      <guid>https://jaearly.github.io/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Articles</title>
+      <link>https://jaearly.github.io/articles/</link>
+      <pubDate>Tue, 08 Oct 2019 15:03:26 +0100</pubDate>
+      
+      <guid>https://jaearly.github.io/articles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://jaearly.github.io/about/</link>
+      <pubDate>Tue, 08 Oct 2019 14:57:43 +0100</pubDate>
+      
+      <guid>https://jaearly.github.io/about/</guid>
+      <description>Joseph is a doctoral student with the University of Southampton and the Alan Turing Institute. He completed an undergraduate degree in computer science at the University of Southampton, and then specialised with a master’s degree focused on machine learning (also at the University of Southampton). Joseph pursed his interest in machine learning and is now researching explainable artificial intelligence – the process of unpacking the “black box” of machine learning and understanding why models exhibit certain behaviours.</description>
+    </item>
     
   </channel>
 </rss>
