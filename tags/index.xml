@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Joseph Early</title>
-    <link>jaearly.github.io/tags/</link>
+    <link>https://jaearly.github.io/tags/</link>
     <description>Recent content in Tags on Joseph Early</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     
-	<atom:link href="jaearly.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jaearly.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
