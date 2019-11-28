@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joseph Early</title>
@@ -17,9 +17,7 @@
       <pubDate>Tue, 08 Oct 2019 15:03:30 +0100</pubDate>
       
       <guid>https://jaearly.github.io/contact/</guid>
-      <description>Joseph Early
-jearly@turing.ac.uk
-Doctoral Student at the Alan Turing Institute
+      <description>Joseph Early jearly@turing.ac.uk Doctoral Student at the Alan Turing Institute
 Agents, Interaction and Complexity Group
 University of Southampton</description>
     </item>
@@ -30,7 +28,7 @@ University of Southampton</description>
       <pubDate>Tue, 08 Oct 2019 15:03:26 +0100</pubDate>
       
       <guid>https://jaearly.github.io/articles/</guid>
-      <description>.card_wrapper { box-shadow: 5px 5px 3px grey; border-width: 1px; border-color: grey; border-style: solid; margin-bottom: 30px; padding: 2%; } .publisher_title { color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: 700; margin: -1% 0% 1% 0%; } .article_title { margin: 1% 0% 0% 0%; } .article_image { width:80%; height: 370px; display: block; margin: auto; object-fit: cover; } .article_desc { margin: 1% 0% 0% 0%; }  The Alan Turing Institute  From agriculture to engineering The Alan Turing Institute welcomes new cohort of students (25 Sep 2019)   With students from diverse disciplines ranging from agriculture to engineering, and from law to health, the Turing is delighted to welcome an energetic new cohort of enrichment and doctoral students.</description>
+      <description>.card_wrapper { box-shadow: 5px 5px 3px grey; border-width: 1px; border-color: grey; border-style: solid; margin-bottom: 30px; padding: 2%; } .publisher_title { color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: 700; margin: -1% 0% 1% 0%; } .article_title { margin: 1% 0% 0% 0%; } .article_image { width:80%; height: 370px; display: block; margin: auto; object-fit: cover; } .article_desc { margin: 1% 0% 0% 0%; }  Southampton Electronics and Computer Science, Liz Gilbride  ECS researchers nationally recognised by The Alan Turing Institute (26 Nov 2019)   Three members of Electronics and Computer Science (ECS) have been recognised for their research potential by being awarded roles in The Alan Turing Institute – the UK’s national institute for data science and artificial intelligence.</description>
     </item>
     
     <item>
