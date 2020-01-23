@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Joseph Early</title>
-    <link>https://jearly.co.uk/</link>
+    <link>https://www.jearly.co.uk/</link>
     <description>Recent content on Joseph Early</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Tue, 08 Oct 2019 15:03:30 +0100</lastBuildDate>
     
-	<atom:link href="https://jearly.co.uk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.jearly.co.uk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Contact</title>
-      <link>https://jearly.co.uk/contact/</link>
+      <link>https://www.jearly.co.uk/contact/</link>
       <pubDate>Tue, 08 Oct 2019 15:03:30 +0100</pubDate>
       
-      <guid>https://jearly.co.uk/contact/</guid>
+      <guid>https://www.jearly.co.uk/contact/</guid>
       <description>Joseph Early
 jearly@turing.ac.uk
 Doctoral Student at the Alan Turing Institute
@@ -26,19 +26,19 @@ University of Southampton</description>
     
     <item>
       <title>Articles</title>
-      <link>https://jearly.co.uk/articles/</link>
+      <link>https://www.jearly.co.uk/articles/</link>
       <pubDate>Tue, 08 Oct 2019 15:03:26 +0100</pubDate>
       
-      <guid>https://jearly.co.uk/articles/</guid>
+      <guid>https://www.jearly.co.uk/articles/</guid>
       <description>.card_wrapper { box-shadow: 5px 5px 3px grey; border-width: 1px; border-color: grey; border-style: solid; margin-bottom: 30px; padding: 2%; } .publisher_title { color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: 700; margin: -1% 0% 1% 0%; } .article_title { margin: 1% 0% 0% 0%; } .article_image { width:80%; height: 370px; display: block; margin: auto; object-fit: cover; } .article_desc { margin: 1% 0% 0% 0%; }  University of Southampton  Turing at Southampton Welcomes New Fellows (16 Jan 2019)   Representatives from The Alan Turing Institute at Southampton welcomed a new cohort of fellows and a doctoral student to the Turing at Southampton group.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://jearly.co.uk/about/</link>
+      <link>https://www.jearly.co.uk/about/</link>
       <pubDate>Tue, 08 Oct 2019 14:57:43 +0100</pubDate>
       
-      <guid>https://jearly.co.uk/about/</guid>
+      <guid>https://www.jearly.co.uk/about/</guid>
       <description>Joseph is a doctoral student with the University of Southampton and the Alan Turing Institute. He completed an undergraduate degree in computer science at the University of Southampton, and then specialised with a master’s degree focused on machine learning (also at the University of Southampton). Joseph pursed his interest in machine learning and is now researching explainable artificial intelligence – the process of unpacking the “black box” of machine learning and understanding why models exhibit certain behaviours.</description>
     </item>
     
