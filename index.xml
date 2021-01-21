@@ -5,10 +5,15 @@
     <link>https://www.jearly.co.uk/</link>
     <description>Recent content on Joseph Early</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-uk</language>
-    
-	<atom:link href="https://www.jearly.co.uk/index.xml" rel="self" type="application/rss+xml" />
-    
+    <language>en-uk</language><atom:link href="https://www.jearly.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Publications</title>
+      <link>https://www.jearly.co.uk/publications/</link>
+      <pubDate>Thu, 21 Jan 2021 15:03:26 +0100</pubDate>
+      
+      <guid>https://www.jearly.co.uk/publications/</guid>
+      <description>.card_wrapper { box-shadow: 5px 5px 3px grey; border-width: 1px; border-color: grey; border-style: solid; margin-bottom: 30px; padding: 2%; } .publisher_title { color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: 700; margin: -1% 0% 1% 0%; } .publication_title { margin: 1% 0% 0% 0%; } .publication_authors { margin: 1% 0% 0% 0%; font-style: italic; } .publication_special { margin: 1% 0% 0% 0%; color: red; } .publication_abstract { margin: 1% 0% 0% 0%; }  European Journal of Surgical Oncology  Predicting response to neoadjuvant therapy using image capture from diagnostic biopsies of oesophageal adenocarcinoma (Nov 2020)   Saqib Rahman, Joseph Early, Matt De Vries, Megan Lloyd, Ben Grace, Gopal Ramchurn, Timothy Underwood BASO Raven Prize - Best Presentation Winner The standard of care for locally advanced oesophageal adenocarcinoma is neoadjuvant chemotherapy (NACT) or chemoradiotherapy (NACRT) followed by surgery.</description>
+    </item>
     
     <item>
       <title>Projects</title>
@@ -38,7 +43,7 @@ University of Southampton</description>
       <pubDate>Tue, 08 Oct 2019 15:03:26 +0100</pubDate>
       
       <guid>https://www.jearly.co.uk/articles/</guid>
-      <description>.card_wrapper { box-shadow: 5px 5px 3px grey; border-width: 1px; border-color: grey; border-style: solid; margin-bottom: 30px; padding: 2%; } .publisher_title { color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: 700; margin: -1% 0% 1% 0%; } .article_title { margin: 1% 0% 0% 0%; } .article_image { width:80%; height: 370px; display: block; margin: auto; object-fit: cover; } .article_desc { margin: 1% 0% 0% 0%; }  Medium - Towards Data Science, Joseph Early  The Potential of Gated Linear Networks for Online Learning (16 Jul 2020)   A recent publication from DeepMind brings an interesting new take on sample-efficient online learning.</description>
+      <description>.card_wrapper { box-shadow: 5px 5px 3px grey; border-width: 1px; border-color: grey; border-style: solid; margin-bottom: 30px; padding: 2%; } .publisher_title { color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: 700; margin: -1% 0% 1% 0%; } .article_title { margin: 1% 0% 0% 0%; } .article_image { width:80%; height: 370px; display: block; margin: auto; object-fit: cover; } .article_desc { margin: 1% 0% 0% 0%; }  University of Southampton, Electronics and Computer Science  How will Santa save the pandemic Christmas?</description>
     </item>
     
     <item>
