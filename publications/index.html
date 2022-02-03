@@ -11,10 +11,10 @@
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Publications"/>
-<meta name="twitter:description" content=".card_wrapper { box-shadow: 5px 5px 3px grey; border-width: 1px; border-color: grey; border-style: solid; margin-bottom: 30px; padding: 2%; } .publisher_title { color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: 700; margin: -1% 0% 1% 0%; } .publication_title { margin: 1% 0% 0% 0%; } .publication_authors { margin: 1% 0% 0% 0%; font-style: italic; } .publication_special { margin: 1% 0% 0% 0%; color: red; } .publication_abstract { margin: 1% 0% 0% 0%; }  Queen Mary Law Research  Non-Asimov Explanations Regulating AI Through Transparency (Nov 2021)   Chris Reed, Keri Grieman, Joseph Early An important part of law and regulation is demanding explanations for actual and potential failures."/>
+<meta name="twitter:description" content=".card_wrapper { box-shadow: 5px 5px 3px grey; border-width: 1px; border-color: grey; border-style: solid; margin-bottom: 30px; padding: 2%; } .card_header { overflow: hidden; } .card_body { } .publisher_title { display:inline; float:left; color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: 700; margin: 0; } .publication_date { display:inline; float:right; color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-style: italic; margin: 0; } .publication_title { margin: 1% 0% 0% 0%; } .publication_authors { margin: 1% 0% 0% 0%; font-style: italic; } ."/>
 
     <meta property="og:title" content="Publications" />
-<meta property="og:description" content=".card_wrapper { box-shadow: 5px 5px 3px grey; border-width: 1px; border-color: grey; border-style: solid; margin-bottom: 30px; padding: 2%; } .publisher_title { color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: 700; margin: -1% 0% 1% 0%; } .publication_title { margin: 1% 0% 0% 0%; } .publication_authors { margin: 1% 0% 0% 0%; font-style: italic; } .publication_special { margin: 1% 0% 0% 0%; color: red; } .publication_abstract { margin: 1% 0% 0% 0%; }  Queen Mary Law Research  Non-Asimov Explanations Regulating AI Through Transparency (Nov 2021)   Chris Reed, Keri Grieman, Joseph Early An important part of law and regulation is demanding explanations for actual and potential failures." />
+<meta property="og:description" content=".card_wrapper { box-shadow: 5px 5px 3px grey; border-width: 1px; border-color: grey; border-style: solid; margin-bottom: 30px; padding: 2%; } .card_header { overflow: hidden; } .card_body { } .publisher_title { display:inline; float:left; color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-weight: 700; margin: 0; } .publication_date { display:inline; float:right; color: #464646; letter-spacing: .2px; font-family: Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; font-style: italic; margin: 0; } .publication_title { margin: 1% 0% 0% 0%; } .publication_authors { margin: 1% 0% 0% 0%; font-style: italic; } ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.jearly.co.uk/publications/" /><meta property="article:section" content="" />
 <meta property="article:published_time" content="2021-01-21T15:03:26+01:00" />
@@ -50,13 +50,15 @@
     
       <link rel="stylesheet" href="https://www.jearly.co.uk/css/academicons.min.css" />
     
+      <link rel="stylesheet" href="https://www.jearly.co.uk/css/custom_css.css" />
+    
 
     
     
     <link rel="icon" type="image/png" href="https://www.jearly.co.uk/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://www.jearly.co.uk/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.89.4" />
+    <meta name="generator" content="Hugo 0.92.1" />
   </head>
 
   <body class=" ">
@@ -116,12 +118,29 @@
     margin-bottom: 30px;
     padding: 2%;
 }
+.card_header {
+	overflow: hidden;
+}
+.card_body {
+
+}
 .publisher_title {
+	display:inline;
+	float:left;
 	color: #464646; 
 	letter-spacing: .2px; 
 	font-family:  Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; 
 	font-weight: 700;
-	margin: -1% 0% 1% 0%;
+	margin: 0;
+}
+.publication_date {
+	display:inline;
+	float:right;
+	color: #464646; 
+	letter-spacing: .2px; 
+	font-family:  Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; 
+	font-style: italic;
+	margin: 0;
 }
 .publication_title {
 	margin: 1% 0% 0% 0%;
@@ -140,13 +159,66 @@
 </style>
 
 <div class="card card_wrapper">
-	<p class="publisher_title">
-		Queen Mary Law Research
-	</p>
+	<div class="card_header">
+		<p class="publisher_title">
+			ICLR 2022
+		</p>
+		<p class="publication_date">
+			January 2022
+		</p>
+	</div>
+	<div class="card_body">
+		<h4 class="publication_title">
+			<a href="https://arxiv.org/abs/2201.11701" target="_blank">
+				Model Agnostic Interpretability for Multiple Instance Learning
+			</a>
+		</h4>
+		<p class="publication_authors">
+			Joseph Early, Christine Evers, Sarvapali Ramchurn
+		</p>
+		<p class="publication_abstract">
+			In Multiple Instance Learning (MIL), models are trained using bags of instances, where only a single label is provided for each bag. A bag label is often only determined by a handful of key instances within a bag, making it difficult to interpret what information a classifier is using to make decisions. In this work, we establish the key requirements for interpreting MIL models. We then go on to develop several model-agnostic approaches that meet these requirements...
+		</p>
+	</div>
+</div>
+
+<div class="card card_wrapper">
+	<div class="card_header">
+		<p class="publisher_title">
+			British Journal of Surgery
+		</p>
+		<p class="publication_date">
+			December 2021
+		</p>
+	</div>
+	<div>
+		<h4 class="publication_title">
+			<a href="https://academic.oup.com/bjs/article/108/Supplement_9/znab430.185/6462752?login=true" target="_blank">
+				Predicting survival and response to therapy using diagnostic biopsies: A machine learning approach to facilitate treatment decisions for oesophageal adenocarcinoma
+			</a>
+		</h4>
+		<p class="publication_authors">
+			Saqib Rahman, Joseph Early, Ben Sharpe, et al.
+		</p>
+		<p class="publication_abstract">
+			Standard of care for locally advanced oesophageal adenocarcinoma is neoadjuvant chemotherapy or chemoradiotherapy followed by surgery. Only a minority of patients (<25%) derive significant survival benefit from neoadjuvant treatment and there are no reliable means of establishing prior to treatment in whom this benefit will occur. Moreover, accurate prediction of survival prior to treatment is also not possible....
+		</p>
+	</div>
+</div>
+
+<div class="card card_wrapper">
+	<div class="card_header">
+		<p class="publisher_title">
+			Nordic Yearbook of Law and Informatics
+		</p>
+		<p class="publication_date">
+			November 2021
+		</p>
+	</div>
 	<div>
 		<h4 class="publication_title">
 			<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3970518" target="_blank">
-				Non-Asimov Explanations Regulating AI Through Transparency (Nov 2021)
+				Non-Asimov Explanations Regulating AI Through Transparency
 			</a>
 		</h4>
 		<p class="publication_authors">
@@ -159,17 +231,22 @@
 </div>
 
 <div class="card card_wrapper">
-	<p class="publisher_title">
-		European Journal of Surgical Oncology
-	</p>
+	<div class="card_header">
+		<p class="publisher_title">
+			European Journal of Surgical Oncology
+		</p>
+		<p class="publication_date">
+			November 2020
+		</p>
+	</div>
 	<div>
 		<h4 class="publication_title">
 			<a href="https://www.ejso.com/article/S0748-7983(20)30919-7/fulltext" target="_blank">
-				Predicting response to neoadjuvant therapy using image capture from diagnostic biopsies of oesophageal adenocarcinoma (Nov 2020)
+				Predicting response to neoadjuvant therapy using image capture from diagnostic biopsies of oesophageal adenocarcinoma
 			</a>
 		</h4>
 		<p class="publication_authors">
-			Saqib Rahman, Joseph Early, Matt De Vries, Megan Lloyd, Ben Grace, Gopal Ramchurn, Timothy Underwood
+			Saqib Rahman, Joseph Early, Matt De Vries, et al.
 		</p>
 		<p class="publication_special">
 			BASO Raven Prize - Best Presentation Winner
@@ -181,13 +258,18 @@
 </div>
 
 <div class="card card_wrapper">
-	<p class="publisher_title">
-		arXiv Preprint
-	</p>
+	<div class="card_header">
+		<p class="publisher_title">
+			arXiv Preprint
+		</p>
+		<p class="publication_date">
+			April 2019
+		</p>
+	</div>
 	<div>
 		<h4 class="publication_title">
 			<a href="https://arxiv.org/abs/1904.03178" target="_blank">
-				Reducing catastrophic forgetting when evolving neural networks (Apr 2019)
+				Reducing Catastrophic Forgetting when Evolving Neural Networks
 			</a>
 		</h4>
 		<p class="publication_authors">
