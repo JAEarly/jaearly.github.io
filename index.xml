@@ -12,7 +12,7 @@
       <pubDate>Thu, 21 Jan 2021 15:03:26 +0100</pubDate>
       
       <guid>https://www.jearly.co.uk/publications/</guid>
-      <description>arXiv Preprint May 2022 Non-Markovian Reward Modelling from Trajectory Labels via Interpretable Multiple Instance Learning Joseph Early, Tom Bewley, Christine Evers, Sarvapali Ramchurn We generalise the problem of reward modelling (RM) for reinforcement learning (RL) to handle non-Markovian rewards. Existing work assumes that human evaluators observe each step in a trajectory independently when providing feedback on agent behaviour. In this work, we remove this assumption, extending RM to include hidden state information that captures temporal dependencies in human assessment of trajectories.</description>
+      <description>NeurIPS 2022 October 2022 Non-Markovian Reward Modelling from Trajectory Labels via Interpretable Multiple Instance Learning Joseph Early, Tom Bewley, Christine Evers, Sarvapali Ramchurn We generalise the problem of reward modelling (RM) for reinforcement learning (RL) to handle non-Markovian rewards. Existing work assumes that human evaluators observe each step in a trajectory independently when providing feedback on agent behaviour. In this work, we remove this assumption, extending RM to include hidden state information that captures temporal dependencies in human assessment of trajectories.</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@ University of Southampton</description>
       <pubDate>Tue, 08 Oct 2019 15:03:26 +0100</pubDate>
       
       <guid>https://www.jearly.co.uk/articles/</guid>
-      <description>Medium - Towards Data Science, Joseph Early June 2022 Explaining AI for High-Resolution Images AI can be used to make automated decisions based on high-resolution images, but can we understand those decisions? In this article, I discuss how interpretable multiple instance learning can be used to tackle this problem. Medium - Towards Data Science, Joseph Early June 2022 Mastering Inset Axes in Matplotlib Inset axes are a fantastic (and often underutilised) tool in Matplotlib.</description>
+      <description>The Conversation, Joseph Early September 2022 AI can produce prize-winning art, but it still can&#39;t compete with human creativity People consider creativity to be inherently human. However, artificial intelligence (AI) has reached the stage where it can be creative as well. Unions of creative practitioners such as Stop AI Stealing the Show have for some time been raising concerns about the use of AI in creative fields. But could AI actually replace human artists?</description>
     </item>
     
     <item>
@@ -52,7 +52,7 @@ University of Southampton</description>
       <pubDate>Tue, 08 Oct 2019 14:57:43 +0100</pubDate>
       
       <guid>https://www.jearly.co.uk/about/</guid>
-      <description>Bio Joseph is a doctoral student with the University of Southampton and the Alan Turing Institute. He completed an undergraduate degree in computer science at the University of Southampton, and then specialised with a master’s degree focused on machine learning (also at the University of Southampton). Joseph pursed his interest in machine learning and is now in the third year of his PhD. His research focuses on interpretable machine learning – the process of unpacking the “black box” of artificial intelligence and understanding why models exhibit certain behaviours.</description>
+      <description>Bio Joseph is a doctoral student with the University of Southampton and the Alan Turing Institute. He completed an undergraduate degree in computer science at the University of Southampton, and then specialised with a master’s degree focused on machine learning (also at the University of Southampton). Joseph pursued his interest in machine learning and is now in the third year of his PhD. His research focuses on interpretable machine learning – the process of unpacking the “black box” of artificial intelligence and understanding why models exhibit certain behaviours.</description>
     </item>
     
   </channel>
