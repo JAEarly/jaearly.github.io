@@ -12,7 +12,7 @@
       <pubDate>Thu, 21 Jan 2021 15:03:26 +0100</pubDate>
       
       <guid>https://www.jearly.co.uk/publications/</guid>
-      <description>NeurIPS 2022 October 2022 Non-Markovian Reward Modelling from Trajectory Labels via Interpretable Multiple Instance Learning Joseph Early, Tom Bewley, Christine Evers, Sarvapali Ramchurn We generalise the problem of reward modelling (RM) for reinforcement learning (RL) to handle non-Markovian rewards. Existing work assumes that human evaluators observe each step in a trajectory independently when providing feedback on agent behaviour. In this work, we remove this assumption, extending RM to include hidden state information that captures temporal dependencies in human assessment of trajectories.</description>
+      <description>Tackling Climate Change with Machine Learning: Workshop at NeurIPS 2022 November 2022 Scene-to-Patch Earth Observation: Multiple Instance Learning for Land Cover Classification Joseph Early, Ying-Jung Deweese, Christine Evers, Sarvapali Ramchurn Land cover classification (LCC), and monitoring how land use changes over time, is an important process in climate change mitigation and adaptation. Existing approaches that use machine learning with Earth observation data for LCC rely on fully-annotated and segmented datasets.</description>
     </item>
     
     <item>
