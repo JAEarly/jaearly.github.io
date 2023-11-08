@@ -4,26 +4,28 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
 
     <meta name="author" content="Joseph Early">
-    <meta name="description" content="Joseph Early&#39;s personal website">
+    <meta name="description" content="Medium - Level Up Coding, Joseph Early March 2023 Mastering Subplot Legends in Matplotlib A tutorial on how to create shared subplot legends in Matplotlib. Python code provided in a Jupyter notebook. Newsweek, Pandora Dewan March 2023 Scientists Are Now Teaching AI How To Read Human Minds Artificial Intelligence (AI) can read your mind... if you are hooked up to an fMRI machine and it is trained on how you process visual information.">
     <meta name="keywords" content="student,doctoral,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Articles"/>
-<meta name="twitter:description" content="Medium - Level Up Coding, Joseph Early March 2023 Mastering Subplot Legends in Matplotlib Matplotlib subplots allow you to show several different graphs within a single figure. However, it is often nice to have a shared legend that provides detail on the information displayed in the subplots. In this article, I explain how to create shared legends, and format them to nicely arrange your subplots. The code used to generate of all the plots shown is included in a Python Notebook at the end of this article."/>
+<meta name="twitter:description" content="Medium - Level Up Coding, Joseph Early March 2023 Mastering Subplot Legends in Matplotlib A tutorial on how to create shared subplot legends in Matplotlib. Python code provided in a Jupyter notebook. Newsweek, Pandora Dewan March 2023 Scientists Are Now Teaching AI How To Read Human Minds Artificial Intelligence (AI) can read your mind... if you are hooked up to an fMRI machine and it is trained on how you process visual information."/>
 
     <meta property="og:title" content="Articles" />
-<meta property="og:description" content="Medium - Level Up Coding, Joseph Early March 2023 Mastering Subplot Legends in Matplotlib Matplotlib subplots allow you to show several different graphs within a single figure. However, it is often nice to have a shared legend that provides detail on the information displayed in the subplots. In this article, I explain how to create shared legends, and format them to nicely arrange your subplots. The code used to generate of all the plots shown is included in a Python Notebook at the end of this article." />
+<meta property="og:description" content="Medium - Level Up Coding, Joseph Early March 2023 Mastering Subplot Legends in Matplotlib A tutorial on how to create shared subplot legends in Matplotlib. Python code provided in a Jupyter notebook. Newsweek, Pandora Dewan March 2023 Scientists Are Now Teaching AI How To Read Human Minds Artificial Intelligence (AI) can read your mind... if you are hooked up to an fMRI machine and it is trained on how you process visual information." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.jearly.co.uk/articles/" /><meta property="article:section" content="" />
 <meta property="article:published_time" content="2019-10-08T15:03:26+01:00" />
 <meta property="article:modified_time" content="2019-10-08T15:03:26+01:00" />
 
 
-    
-      <base href="https://www.jearly.co.uk/articles/">
-    
+
     <title>
   Articles · Joseph Early
 </title>
@@ -32,69 +34,99 @@
       <link rel="canonical" href="https://www.jearly.co.uk/articles/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link rel="preload" href="https://www.jearly.co.uk/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
     
       
       
-      <link rel="stylesheet" href="https://www.jearly.co.uk/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://www.jearly.co.uk/css/coder.min.d9fddbffe6f27e69985dc5fe0471cdb0e57fbf4775714bc3d847accb08f4a1f6.css" integrity="sha256-2f3b/&#43;byfmmYXcX&#43;BHHNsOV/v0d1cUvD2Eesywj0ofY=" crossorigin="anonymous" media="screen" />
     
 
     
 
     
+      
+        
+        
+        <link rel="stylesheet" href="https://www.jearly.co.uk/css/coder-dark.min.ccbbada2e264e4fdbf9b2181cccc2cdb289a63dc9520a1e96ac2b9a45778df29.css" integrity="sha256-zLutouJk5P2/myGBzMws2yiaY9yVIKHpasK5pFd43yk=" crossorigin="anonymous" media="screen" />
+      
+    
 
     
-      <link rel="stylesheet" href="https://www.jearly.co.uk/css/academicons.min.css" />
-    
-      <link rel="stylesheet" href="https://www.jearly.co.uk/css/custom_css.css" />
+      
+        
+        <link rel="stylesheet" href="https://www.jearly.co.uk/css/academicons.min.min.0bb435342737c798cb2052624e4d1b997875ab0915628c1ee46c2ae60a76d836.css" integrity="sha256-C7Q1NCc3x5jLIFJiTk0bmXh1qwkVYowe5Gwq5gp22DY=" crossorigin="anonymous" media="screen" />
+      
     
 
     
+      
+      
+        
+        <link rel="stylesheet" href="https://www.jearly.co.uk/scss/custom_css.min.783e2a54457aa3e25065a48730931a36af0fcf866d796b8d2101eb242ee39793.css" integrity="sha256-eD4qVEV6o&#43;JQZaSHMJMaNq8Pz4ZteWuNIQHrJC7jl5M=" crossorigin="anonymous" media="screen" />
+      
     
+
     <link rel="icon" type="image/png" href="https://www.jearly.co.uk/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://www.jearly.co.uk/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.119.0">
+    <link rel="apple-touch-icon" href="https://www.jearly.co.uk/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.jearly.co.uk/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.120.4">
   </head>
 
-  <body class=" ">
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-dark">
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://www.jearly.co.uk/">
       Joseph Early
     </a>
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-    <ul class="navigation-list">
-      
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://www.jearly.co.uk/about/">About</a>
-          </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.jearly.co.uk/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.jearly.co.uk/articles/">Articles</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.jearly.co.uk/publications/">Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.jearly.co.uk/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.jearly.co.uk/contact/">Contact</a>
+            </li>
+          
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://www.jearly.co.uk/articles/">Articles</a>
-          </li>
         
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://www.jearly.co.uk/publications/">Publications</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://www.jearly.co.uk/projects/">Projects</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://www.jearly.co.uk/contact/">Contact</a>
-          </li>
-        
-      
-      
-    </ul>
+      </ul>
+    
   </section>
 </nav>
 
@@ -104,569 +136,611 @@
   <section class="container page">
   <article>
     <header>
-      <h1>Articles</h1>
+      <h1 class="title">
+        <a class="title-link" href="https://www.jearly.co.uk/articles/">
+          Articles
+        </a>
+      </h1>
     </header>
 
     
-<style>
-.card_wrapper {
-	box-shadow: 5px 5px 3px grey;
-	border-width: 1px;
-    border-color: grey;
-    border-style: solid;
-    margin-bottom: 30px;
-    padding: 2%;
-}
-.publisher_title {
-	display:inline;
-	float:left;
-	color: #464646; 
-	letter-spacing: .2px; 
-	font-family:  Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; 
-	font-weight: 700;
-	margin: -1% 0% 1% 0%;
-}
-.article_date {
-	display:inline;
-	float:right;
-	color: #464646;
-	letter-spacing: .2px;
-	font-family:  Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif;
-	font-style: italic;
-	margin: -1% 0% 1% 0%;
-}
-.article_title {
-	margin: 1% 0% 0% 0%;
-}
-.article_image {
-	width:80%; 
-	height: 370px;
-	display: block; 
-	margin: auto;
-	object-fit: cover;
-}
-.article_desc {
-	margin: 1% 0% 0% 0%;
-}
-</style>
-
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div 
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://medium.com/gitconnected/mastering-subplot-legends-in-matplotlib-e7bd2f8f9986'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Level Up Coding, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		March 2023
 	</p>
-	<img src="../images/matplotlib_subplot.webp" class="article_image">
+	<img src="../images/matplotlib_subplot.webp" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://medium.com/gitconnected/mastering-subplot-legends-in-matplotlib-e7bd2f8f9986" target="_blank">
-				Mastering Subplot Legends in Matplotlib
-			</a>
+		<h4 class="card_title">
+			Mastering Subplot Legends in Matplotlib
 		</h4>
-		<p class="article_desc">
-			Matplotlib subplots allow you to show several different graphs within a single figure. However, it is often nice to have a shared legend that provides detail on the information displayed in the subplots. In this article, I explain how to create shared legends, and format them to nicely arrange your subplots. The code used to generate of all the plots shown is included in a Python Notebook at the end of this article.
+		<p class="card_desc">
+			A tutorial on how to create shared subplot legends in Matplotlib. Python code provided in a Jupyter notebook.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://www.newsweek.com/scientists-teaching-ai-how-read-human-minds-1786961'
+	)"
+>
+	<p class="card_publisher">
 		Newsweek, Pandora Dewan
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		March 2023
 	</p>
-	<img src="../images/ai_mri.webp" class="article_image">
+	<img src="../images/ai_mri.webp" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://www.newsweek.com/scientists-teaching-ai-how-read-human-minds-1786961" target="_blank">
-				Scientists Are Now Teaching AI How To Read Human Minds
-			</a>
+		<h4 class="card_title">
+			Scientists Are Now Teaching AI How To Read Human Minds
 		</h4>
-		<p class="article_desc">
-			Artificial Intelligence (AI) can read your mind... if you are hooked up to an fMRI machine and it is trained on how you process visual information. Researchers at Osaka University in Japan have found that AI can be trained to reconstruct high resolution images from human brain activity, gathered from MRI scans, which bear a striking resemblance to the source image being shown to the participants.
+		<p class="card_desc">
+			Artificial Intelligence (AI) can read your mind... if you are hooked up to an fMRI machine and it is trained on how you process visual information.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div	
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://www.bbc.co.uk/programmes/w3ct31zc'
+	)"
+>
+	<p class="card_publisher">
 		BBC World Service - Digital Planet Podcast
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		November 2022
 	</p>
-	<img src="../images/bbc_podcast.jpg" class="article_image">
+	<img src="../images/bbc_podcast.jpg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://www.bbc.co.uk/programmes/w3ct31zc" target="_blank">
-				Robots that can assemble almost anything (featuring my interview on AI for predicting suicide risk)
-			</a>
+		<h4 class="card_title">
+			Robots that can assemble almost anything (featuring my interview on AI for predicting suicide risk)
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			Robots that can assemble almost anything a step closer. Also the war of words on Wikipedia; attempts at changing the narrative. Finally can AI predict suicide risk?
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://theconversation.com/ai-could-help-predict-suicides-but-rushing-the-technology-could-lead-to-big-mistakes-192266'
+	)"
+>
+	<p class="card_publisher">
 		The Conversation, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		October 2022
 	</p>
-	<img src="../images/ai_suicide.jpeg" class="article_image">
+	<img src="../images/ai_suicide.jpeg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://theconversation.com/ai-could-help-predict-suicides-but-rushing-the-technology-could-lead-to-big-mistakes-192266" target="_blank">
-				AI could help predict suicides – but rushing the technology could lead to big mistakes
-			</a>
+		<h4 class="card_title">
+			AI could help predict suicides – but rushing the technology could lead to big mistakes
 		</h4>
-		<p class="article_desc">
-			AI has great potential to save the lives of mental health patients, but care must be taken to ensure it's used safely and correctly. A study conducted in October 2022, led by the Black Dog Institute in the University of New South Wales, found artificial intelligence (AI) models outperformed clinical risk assessments. However, despite their promise, AI models for mental health are yet to be widely used in clinical settings.
+		<p class="card_desc">
+			AI has great potential to save the lives of mental health patients, but care must be taken to ensure it's used safely and correctly.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://theconversation.com/ai-can-produce-prize-winning-art-but-it-still-cant-compete-with-human-creativity-190279'
+	)"
+>
+	<p class="card_publisher">
 		The Conversation, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		September 2022
 	</p>
-	<img src="../images/sd_robots.png" class="article_image">
+	<img src="../images/sd_robots.png" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://theconversation.com/ai-can-produce-prize-winning-art-but-it-still-cant-compete-with-human-creativity-190279" target="_blank">
-				AI can produce prize-winning art, but it still can't compete with human creativity
-			</a>
+		<h4 class="card_title">
+			AI can produce prize-winning art, but it still can't compete with human creativity
 		</h4>
-		<p class="article_desc">
-			People consider creativity to be inherently human. However, artificial intelligence (AI) has reached the stage where it can be creative as well. Unions of creative practitioners such as Stop AI Stealing the Show have for some time been raising concerns about the use of AI in creative fields. But could AI actually replace human artists?
+		<p class="card_desc">
+			People consider creativity to be inherently human. However, artificial intelligence (AI) has reached the stage where it can be creative as well. But could AI actually replace human artists?
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://towardsdatascience.com/explaining-ai-for-high-resolution-images-fba0c743c76e'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Towards Data Science, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		June 2022
 	</p>
-	<img src="../images/xai_high_res.jpeg" class="article_image">
+	<img src="../images/xai_high_res.jpeg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://towardsdatascience.com/explaining-ai-for-high-resolution-images-fba0c743c76e" target="_blank">
-				Explaining AI for High-Resolution Images
-			</a>
+		<h4 class="card_title">
+			Explainable AI for High-Resolution Images
 		</h4>
-		<p class="article_desc">
-			AI can be used to make automated decisions based on high-resolution images, but can we understand those decisions? In this article, I discuss how interpretable multiple instance learning can be used to tackle this problem.
+		<p class="card_desc">
+			AI can be used to make automated decisions based on high-resolution images, but can we understand those decisions?
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://towardsdatascience.com/mastering-inset-axes-in-matplotlib-458d2fdfd0c0'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Towards Data Science, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		June 2022
 	</p>
-	<img src="../images/inset_axes.jpeg" class="article_image">
+	<img src="../images/inset_axes.jpeg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://towardsdatascience.com/mastering-inset-axes-in-matplotlib-458d2fdfd0c0" target="_blank">
-				Mastering Inset Axes in Matplotlib
-			</a>
+		<h4 class="card_title">
+			Mastering Inset Axes in Matplotlib
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			Inset axes are a fantastic (and often underutilised) tool in Matplotlib. In this article, I go through the basics of using inset axes, and then give extra details on how to customize and improve your plots.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://youtu.be/j3ETADBbdm4'
+	)"
+>
+	<p class="card_publisher">
 		YouTube - Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		May 2022
 	</p>
-	<img src="../images/3MT_Round1_Cover.png" class="article_image">
+	<img src="../images/3MT_Round1_Cover.png" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://youtu.be/j3ETADBbdm4" target="_blank">
-				Three Minute Thesis - 2022 Southampton Engineering Heat Entry
-			</a>
+		<h4 class="card_title">
+			Three Minute Thesis - 2022 Southampton Engineering Heat Entry
 		</h4>
-		<p class="article_desc">
-			The Three Minute Thesis (3MT) competition celebrates the exciting research conducted by PhD students. Developed by The University of Queensland, 3MT cultivates students’ academic, presentation, and research communication skills. This my winning entry to the 2022 Southampton Engineering Heat, titled "Opening the Black Box: Explaining AI for high resolution images".
+		<p class="card_desc">
+			The Three Minute Thesis (3MT) competition celebrates the exciting research conducted by PhD students. This my winning entry to the 2022 Southampton Engineering Heat.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://towardsdatascience.com/understanding-the-outputs-of-multi-layer-bi-directional-lstms-13ad99a80dd3'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Towards Data Science, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		March 2022
 	</p>
-	<img src="../images/two_way_sign.jpg" class="article_image">
+	<img src="../images/two_way_sign.jpg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://towardsdatascience.com/understanding-the-outputs-of-multi-layer-bi-directional-lstms-13ad99a80dd3" target="_blank">
-				Understanding the Outputs of Multi-Layer Bi-Directional LSTMs
-			</a>
+		<h4 class="card_title">
+			Understanding the Outputs of Multi-Layer Bi-Directional LSTMs
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			In this short tutorial, I break down the outputs of Multi-Layer Bi-Directional LSTMs, with an example of how to do so in PyTorch.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://medium.com/predict/can-ai-solve-the-worlds-hardest-go-problem-5ae9653adf31'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Predict, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		February 2022
 	</p>
-	<img src="../images/robot_go_problem.png" class="article_image">
+	<img src="../images/robot_go_problem.png" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://medium.com/predict/can-ai-solve-the-worlds-hardest-go-problem-5ae9653adf31" target="_blank">
-				Can AI solve the world’s hardest Go problem?
-			</a>
+		<h4 class="card_title">
+			Can AI solve the world’s hardest Go problem?
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			Igo Hatsuyoron 120 is the hardest Go problem in the world. Let's explore the most recent developments in applying AI to this problem.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<!-- <div class="card card_wrapper">
+	<p class="card_publisher">
 		University of Southampton, Electronics and Computer Science
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		December 2020
 	</p>
-	<img src="../images/santa_ai.jpg" class="article_image">
+	<img src="../images/santa_ai.jpg" class="card_image">
 	<div>
-		<h4 class="article_title">
+		<h4 class="card_title">
 			<a href="https://www.ecs.soton.ac.uk/how-will-santa-save-christmas?utm_source=corporate-twitter&utm_medium=social&utm_content=acaedmic-topical&utm_campaign=ecs" target="_blank">
 				How will Santa save the pandemic Christmas?
 			</a>
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			Just as for all of us, the challenges of the COVID-19 pandemic have really taken their toll at the North Pole this year. One major hurdle remains: how will Santa deliver his presents this winter?
 		</p>
 	</div>
-</div>
+</div> -->
 
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://towardsdatascience.com/the-potential-of-gated-linear-networks-for-online-learning-70ca5ea073a'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Towards Data Science, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		July 2020
 	</p>
-	<img src="../images/dog_gates.jpg" class="article_image">
+	<img src="../images/dog_gates.jpg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://towardsdatascience.com/the-potential-of-gated-linear-networks-for-online-learning-70ca5ea073a" target="_blank">
-				The Potential of Gated Linear Networks for Online Learning
-			</a>
+		<h4 class="card_title">
+			The Potential of Gated Linear Networks for Online Learning
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			A recent publication from DeepMind brings an interesting new take on sample-efficient online learning.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://towardsdatascience.com/how-to-create-latex-tables-directly-from-python-code-5228c5cea09a'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Towards Data Science, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		June 2020
 	</p>
-	<img src="../images/python_table.jpeg" class="article_image">
+	<img src="../images/python_table.jpeg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://towardsdatascience.com/how-to-create-latex-tables-directly-from-python-code-5228c5cea09a" target="_blank">
-				How to create Latex tables directly from Python code
-			</a>
+		<h4 class="card_title">
+			How to create Latex tables directly from Python code
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			Copying tables of results from the console into a Latex report can be tedious and error fraught — so why not automate it?
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<!-- <div class="card card_wrapper">
+	<p class="card_publisher">
 		University of Southampton, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		June 2020
 	</p>
-	<img src="../images/ecs_outreach.png" class="article_image">
+	<img src="../images/ecs_outreach.png" class="card_image">
 	<div>
-		<h4 class="article_title">
+		<h4 class="card_title">
 			<a href="https://youtu.be/tFzM2xLDpQU" target="_blank">
 				ECS Outreach - Deep Learning Taster Talk
 			</a>
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			An outreach video for the University of Southampton Electronics and Computer Science department giving an overview of the Deep Learning coursework.
 		</p>
 	</div>
-</div>
+</div> -->
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<!-- <div class="card card_wrapper">
+	<p class="card_publisher">
 		The Alan Turing Institute
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		June 2020
 	</p>
-	<img src="../images/poster_pic.jpg" class="article_image">
+	<img src="../images/poster_pic.jpg" class="card_image">
 	<div>
-		<h4 class="article_title">
+		<h4 class="card_title">
 			<a href="https://www.turing.ac.uk/events/ai-uk-2020-digital-poster-exhibition" target="_blank">
 				AI UK | 2020 Digital poster exhibition
 			</a>
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			As a truly national institute, we provide a platform for excellent research that is underway across the whole of the UK. As such, we are delighted to announce to host a unique opportunity for researcher development and training, with UK students displaying and presenting their current research in artificial intelligence.
 		</p>
 	</div>
-</div>
+</div> -->
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://medium.com/swlh/whats-hot-in-multi-agent-systems-4b0f348e68bd'
+	)"
+>
+	<p class="card_publisher">
 		Medium - The Startup, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		February 2020
 	</p>
-	<img src="../images/robots.jpg" class="article_image">
+	<img src="../images/robots.jpg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://medium.com/swlh/whats-hot-in-multi-agent-systems-4b0f348e68bd" target="_blank">
-				What's hot in Multi-Agent Systems?
-			</a>
+		<h4 class="card_title">
+			What's hot in Multi-Agent Systems?
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			Multi-Agent Systems research has been a long standing topic in AI, but what are AI researchers in the UK currently working on?
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<!-- <div class="card card_wrapper">
+	<p class="card_publisher">
 		University of Southampton
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		January 2020
 	</p>
-	<img src="../images/turing_at_soton_new_fellows.jpg" class="article_image">
+	<img src="../images/turing_at_soton_new_fellows.jpg" class="card_image">
 	<div>
-		<h4 class="article_title">
+		<h4 class="card_title">
 			<a href="https://www.southampton.ac.uk/the-alan-turing-institute/news/2020/01/networking-event.page?" target="_blank">
 				Turing at Southampton Welcomes New Fellows
 			</a>
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			Representatives from The Alan Turing Institute at Southampton welcomed a new cohort of fellows and a doctoral student to the Turing at Southampton group.
 		</p>
 	</div>
-</div>
+</div> -->
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://towardsdatascience.com/the-biggest-ai-risk-of-the-next-decade-is-not-a-robot-uprising-efb9f6bf2d31'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Towards Data Science, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		December 2019
 	</p>
-	<img src="../images/ai_risk_decade.jpeg" class="article_image">
+	<img src="../images/ai_risk_decade.jpeg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://towardsdatascience.com/the-biggest-ai-risk-of-the-next-decade-is-not-a-robot-uprising-efb9f6bf2d31" target="_blank">
-				The Biggest AI Risk of the Next Decade is not a Robot Uprising
-			</a>
+		<h4 class="card_title">
+			The Biggest AI Risk of the Next Decade is not a Robot Uprising
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			Grand generalisations about the future impacts of artificial general intelligence overshadow the more pressing issues we face today.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://towardsdatascience.com/reproducible-data-science-using-kaggle-and-github-actions-b0d78380bf8e'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Towards Data Science, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		December 2019
 	</p>
-	<img src="../images/kaggle_github_actions.jpeg" class="article_image">
+	<img src="../images/kaggle_github_actions.jpeg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://towardsdatascience.com/reproducible-data-science-using-kaggle-and-github-actions-b0d78380bf8e" target="_blank">
-				Reproducible Data Science using Kaggle and GitHub Actions
-			</a>
+		<h4 class="card_title">
+			Reproducible Data Science using Kaggle and GitHub Actions
 		</h4>
-		<p class="article_desc">
-			With the emerging reproducibility crisis in data science, it is becoming more important for data science researchers to provide open access to their code. This tutorial demonstrates how to integrate Kaggle with GitHub actions to enable better reproducibility of data science projects.
+		<p class="card_desc">
+			This tutorial demonstrates how to integrate Kaggle with GitHub actions to enable better reproducibility of data science projects.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<!-- <div class="card card_wrapper">
+	<p class="card_publisher">
 		Southampton Electronics and Computer Science, Liz Gilbride
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		November 2019
 	</p>
-	<img src="../images/ecs_turing.jpg" class="article_image">
+	<img src="../images/ecs_turing.jpg" class="card_image">
 	<div>
-		<h4 class="article_title">
+		<h4 class="card_title">
 			<a href="https://www.ecs.soton.ac.uk/news/6586" target="_blank">
 				ECS researchers nationally recognised by The Alan Turing Institute
 			</a>
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			Three members of Electronics and Computer Science (ECS) have been recognised for their research potential by being awarded roles in The Alan Turing Institute – the UK’s national institute for data science and artificial intelligence. PhD student Joseph Early is the first Southampton student to be selected as a Turing Doctoral Student, while Dr Adriane Chapman and Professor Neil White, Directors of the Centre for Health Technologies, have been named as Turing Fellows with pilot projects.
 		</p>
 	</div>
-</div>
+</div> -->
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<!-- <div class="card card_wrapper">
+	<p class="card_publisher">
 		The Alan Turing Institute, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		October 2019
 	</p>
-	<img src="../images/rhmt_workshop_banner.png" class="article_image">
+	<img src="../images/rhmt_workshop_banner.png" class="card_image">
 	<div>
-		<h4 class="article_title">
+		<h4 class="card_title">
 			<a href="https://www.turing.ac.uk/events/responsible-human-machine-teaming" target="_blank">
 				Responsible Human-Machine Teaming Workshop
 			</a>
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			The official summary of The Responsible Human-Machine Teaming Workshop at the Alan Turing Institute - a one day event that explored the areas of responsible artificial intelligence, explainable artificial intelligence, human-centred design, robotics, and human robot interaction.		
 		</p>
 	</div>
-</div>
+</div> -->
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<!-- <div class="card card_wrapper">
+	<p class="card_publisher">
 		The Alan Turing Institute, Joanna Dungate
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		September 2019
 	</p>
-	<img src="../images/turing_25_9_19.jpg" class="article_image">
+	<img src="../images/turing_25_9_19.jpg" class="card_image">
 	<div>
-		<h4 class="article_title">
+		<h4 class="card_title">
 			<a href="https://www.turing.ac.uk/news/agriculture-engineering-alan-turing-institute-welcomes-new-cohort-students" target="_blank">
 				From agriculture to engineering The Alan Turing Institute welcomes new cohort of students
 			</a>
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			With students from diverse disciplines ranging from agriculture to engineering, and from law to health, the Turing is delighted to welcome an energetic new cohort of enrichment and doctoral students. There are 54 new students joining the Institute for the academic year 2019/2020. This includes 19 Doctoral students, and 35 Enrichment students.
 		</p>
 	</div>
-</div>
+</div> -->
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://towardsdatascience.com/your-car-may-not-know-when-to-stop-adversarial-attacks-against-autonomous-vehicles-a16df91511f4'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Towards Data Science, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		September 2019
 	</p>
-	<img src="../images/medium_self_driving_attacks.jpg" class="article_image">
+	<img src="../images/medium_self_driving_attacks.jpg" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://towardsdatascience.com/your-car-may-not-know-when-to-stop-adversarial-attacks-against-autonomous-vehicles-a16df91511f4" target="_blank">
-				Your Car May Not Know When to Stop - Adversarial Attacks Against Autonomous Vehicles
-			</a>
+		<h4 class="card_title">
+			Your Car May Not Know When to Stop - Adversarial Attacks Against Autonomous Vehicles
 		</h4>
-		<p class="article_desc">
-			Autonomous vehicles present a utopian dream of high-speed, clean and efficient transportation. However, the computer vision systems at the core of self driving vehilces have been shown to be susceptible to adversarial attacks.
+		<p class="card_desc">
+			Autonomous vehicles present a utopian dream of high-speed, clean and efficient transportation, but the computer vision systems at their core are susceptible to adversarial attacks.
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<div
+	class="card card_wrapper"
+	onclick="window.open(
+		'https://becominghuman.ai/real-time-image-style-interpolation-d9ec9db26a81'
+	)"
+>
+	<p class="card_publisher">
 		Medium - Becoming Human, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		July 2019
 	</p>
-	<img src="../images/real_time_style_interpolation.png" class="article_image">
+	<img src="../images/real_time_style_interpolation.png" class="card_image">
 	<div>
-		<h4 class="article_title">
-			<a href="https://becominghuman.ai/real-time-image-style-interpolation-d9ec9db26a81" target="_blank">
-				Real Time Image Style Interpolation
-			</a>
+		<h4 class="card_title">
+			Real Time Image Style Interpolation
 		</h4>
-		<p class="article_desc">
-			In the Deep Learning module in my final year at the University of Southampton, the main coursework was based on the ICLR Reproducibility Challenge — a mission to replicate the experiments and results of recently published ICLR papers. My team chose to re-implement A Learned Representation For Artistic Style (Dumoulin et al., 2016).
+		<p class="card_desc">
+			My submission to the ICLR Reproducibility Challenge: a re-implementation of "A Learned Representation For Artistic Style" (Dumoulin et al., 2016).
 		</p>
 	</div>
 </div>
 
-<div class="card card_wrapper">
-	<p class="publisher_title">
+<!-- <div class="card card_wrapper">
+	<p class="card_publisher">
 		Medium, Joseph Early
 	</p>
-	<p class="article_date">
+	<p class="card_date">
 		June 2019
 	</p>
-	<img src="../images/evolving_agents_that_dont_forget.png" class="article_image">
+	<img src="../images/evolving_agents_that_dont_forget.png" class="card_image">
 	<div>
-		<h4 class="article_title">
+		<h4 class="card_title">
 			<a href="https://medium.com/@joseph.early/evolving-agents-that-dont-forget-f8e4e9ff1f36" target="_blank">
 				Evolving Agents That Don't Forget
 			</a>
 		</h4>
-		<p class="article_desc">
+		<p class="card_desc">
 			This article summaries some of the research I did as part of my undergraduate degree at the University of Southampton. I developed a novel technique for reducing 'catastrophic forgetting' - the pitfall that machine learning systems encounter when trying to learn several task sequentially.
 		</p>
 	</div>
-</div>
+</div> -->
 
   </article>
 </section>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
 
       </div>
 
       <footer class="footer">
   <section class="container">
+    ©
     
+      2019 -
     
-    
+    2023
+     Joseph Early 
+    ·
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
     
   </section>
 </footer>
 
     </main>
+
+    
+      
+      <script src="https://www.jearly.co.uk/js/coder.min.cb0c595e02234420f3ad3886bf4a9bd2874d0e1e78e090138a9ef158b35aaf17.js" integrity="sha256-ywxZXgIjRCDzrTiGv0qb0odNDh544JATip7xWLNarxc="></script>
+    
+
+    
 
     
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMVL00VVG7"></script>
@@ -681,6 +755,17 @@ if (!doNotTrack) {
 </script>
 
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
   </body>
 
 </html>
