@@ -12,14 +12,14 @@
       <link>https://www.jearly.co.uk/publications/</link>
       <pubDate>Thu, 21 Jan 2021 15:03:26 +0100</pubDate>
       <guid>https://www.jearly.co.uk/publications/</guid>
-      <description>SCRIPTed: A Journal of Law, Technology, and Society February 2023 A Risk-based Approach to AI Regulation: System Categorisation and Explainable AI Practices Keri Grieman, Joseph Early The regulation of artificial intelligence (AI) presents a challenging new legal frontier that is only just beginning to be addressed around the world. This article provides an examination of why regulation of AI is difficult, with a particular focus on understanding the reasoning behind automated decisions.</description>
+      <description>arXiv Preprint November 2023 Inherently Interpretable Time Series Classification via Multiple Instance Learning Joseph Early, Gavin KC Cheung, Kurt Cutajar, Hanting Xie, Jas Kandola, Niall Twomey Conventional Time Series Classification (TSC) methods are often black boxes that obscure inherent interpretation of their decision-making processes. In this work, we leverage Multiple Instance Learning (MIL) to overcome this issue, and propose a new framework called MILLET: Multiple Instance Learning for Locally Explainable Time series classification.</description>
     </item>
     <item>
       <title>Projects</title>
       <link>https://www.jearly.co.uk/projects/</link>
       <pubDate>Sun, 26 Jul 2020 13:07:13 +0100</pubDate>
       <guid>https://www.jearly.co.uk/projects/</guid>
-      <description>Github, Joseph Early October 2023 Tidy Tuesday - Taylor Swift Write-up for a Tidy Tuesday data visualization project exploring if Taylor Swift lyrics follow Zipf&#39;s law. Github, Joseph Early November 2022 MIL for Land Cover Classification Code for my paper &#34;Scene-to-Patch Earth Observation: Multiple Instance Learning for Land Cover Classification&#34; (NeurIPS 2022: Workshop on Tackling Climate Change with Machine Learning). Github, Joseph Early June 2022 MIL for Non-Markovian Reward Modelling Code for my paper &#34;</description>
+      <description>Github, Joseph Early November 2023 MIL for Time Series Classification Code for my paper &#34;Inherently Interpretable Time Series Classification via Multiple Instance Learning&#34;. Github, Joseph Early October 2023 Tidy Tuesday - Taylor Swift Write-up for a Tidy Tuesday data visualization project exploring if Taylor Swift lyrics follow Zipf&#39;s law. Github, Joseph Early November 2022 MIL for Land Cover Classification Code for my paper &#34;Scene-to-Patch Earth Observation: Multiple Instance Learning for Land Cover Classification&#34;</description>
     </item>
     <item>
       <title>Contact</title>
