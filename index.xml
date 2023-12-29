@@ -12,7 +12,7 @@
       <link>https://www.jearly.co.uk/publications/</link>
       <pubDate>Thu, 21 Jan 2021 15:03:26 +0100</pubDate>
       <guid>https://www.jearly.co.uk/publications/</guid>
-      <description>arXiv Preprint November 2023 Inherently Interpretable Time Series Classification via Multiple Instance Learning Joseph Early, Gavin KC Cheung, Kurt Cutajar, Hanting Xie, Jas Kandola, Niall Twomey Conventional Time Series Classification (TSC) methods are often black boxes that obscure inherent interpretation of their decision-making processes. In this work, we leverage Multiple Instance Learning (MIL) to overcome this issue, and propose a new framework called MILLET: Multiple Instance Learning for Locally Explainable Time series classification.</description>
+      <description>Environmental Data Science December 2023 Extending Scene-to-Patch Models: Multi-resolution Multiple Instance Learning for Earth Observation Joseph Early, Ying-Jung Deweese, Christine Evers, Sarvapali Ramchurn Land cover classification (LCC) and natural disaster response (NDR) are important issues in climate change mitigation and adaptation. Existing approaches that use machine learning with Earth observation (EO) imaging data for LCC and NDR often rely on fully annotated and segmented datasets. In this study, we extend our prior work on Scene-to-Patch models: an alternative machine learning approach for EO that utilizes Multiple Instance Learning (MIL).</description>
     </item>
     <item>
       <title>Projects</title>
