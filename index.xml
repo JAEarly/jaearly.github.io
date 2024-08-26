@@ -4,22 +4,23 @@
     <title>Joseph Early</title>
     <link>https://www.jearly.co.uk/</link>
     <description>Recent content on Joseph Early</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-uk</language>
+    <lastBuildDate>Thu, 21 Jan 2021 15:03:26 +0100</lastBuildDate>
     <atom:link href="https://www.jearly.co.uk/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Publications</title>
       <link>https://www.jearly.co.uk/publications/</link>
       <pubDate>Thu, 21 Jan 2021 15:03:26 +0100</pubDate>
       <guid>https://www.jearly.co.uk/publications/</guid>
-      <description>Environmental Data Science December 2023 Extending Scene-to-Patch Models: Multi-resolution Multiple Instance Learning for Earth Observation Joseph Early, Ying-Jung Deweese, Christine Evers, Sarvapali Ramchurn Land cover classification (LCC) and natural disaster response (NDR) are important issues in climate change mitigation and adaptation. Existing approaches that use machine learning with Earth observation (EO) imaging data for LCC and NDR often rely on fully annotated and segmented datasets. In this study, we extend our prior work on Scene-to-Patch models: an alternative machine learning approach for EO that utilizes Multiple Instance Learning (MIL).</description>
+      <description>University of Southampton; PhD Thesis&#xA;June 2024&#xA;Interpretable Multiple Instance Learning Joseph Early&#xA;With the rising use of Artifcial Intelligence (AI) and Machine Learning (ML) methods, there comes an increasing need to understand how automated systems make decisions. Interpretable ML provides insight into the underlying reasoning behind AI and ML models while not stifing their predictive performance. Doing so is important for many reasons, such as facilitating trust, increasing transparency, and providing improved collaboration and control through a better understanding of automated decision-making.</description>
     </item>
     <item>
       <title>Projects</title>
       <link>https://www.jearly.co.uk/projects/</link>
       <pubDate>Sun, 26 Jul 2020 13:07:13 +0100</pubDate>
       <guid>https://www.jearly.co.uk/projects/</guid>
-      <description>Github, Joseph Early November 2023 MIL for Time Series Classification Code for my paper &#34;Inherently Interpretable Time Series Classification via Multiple Instance Learning&#34;. Github, Joseph Early October 2023 Tidy Tuesday - Taylor Swift Write-up for a Tidy Tuesday data visualization project exploring if Taylor Swift lyrics follow Zipf&#39;s law. Github, Joseph Early November 2022 MIL for Land Cover Classification Code for my paper &#34;Scene-to-Patch Earth Observation: Multiple Instance Learning for Land Cover Classification&#34;</description>
+      <description>Github, Joseph Early&#xA;November 2023&#xA;MIL for Time Series Classification Code for my paper &#34;Inherently Interpretable Time Series Classification via Multiple Instance Learning&#34;.&#xA;Github, Joseph Early&#xA;October 2023&#xA;Tidy Tuesday - Taylor Swift Write-up for a Tidy Tuesday data visualization project exploring if Taylor Swift lyrics follow Zipf&#39;s law.&#xA;Github, Joseph Early&#xA;November 2022&#xA;MIL for Land Cover Classification Code for my paper &#34;Scene-to-Patch Earth Observation: Multiple Instance Learning for Land Cover Classification&#34;</description>
     </item>
     <item>
       <title>Contact</title>
@@ -33,14 +34,14 @@
       <link>https://www.jearly.co.uk/articles/</link>
       <pubDate>Tue, 08 Oct 2019 15:03:26 +0100</pubDate>
       <guid>https://www.jearly.co.uk/articles/</guid>
-      <description>DMsGuild, Joseph Early January 2024 Desires of Emberfeld Embark on an unforgettable journey in Desires of Emberfeld, a riveting one-shot Dungeons &amp; Dragons adventure. Medium - Level Up Coding, Joseph Early March 2023 Mastering Subplot Legends in Matplotlib A tutorial on how to create shared subplot legends in Matplotlib. Python code provided in a Jupyter notebook. Newsweek, Pandora Dewan March 2023 Scientists Are Now Teaching AI How To Read Human Minds Artificial Intelligence (AI) can read your mind.</description>
+      <description>DMsGuild, Joseph Early&#xA;January 2024&#xA;Desires of Emberfeld Embark on an unforgettable journey in Desires of Emberfeld, a riveting one-shot Dungeons &amp; Dragons adventure.&#xA;Medium - Level Up Coding, Joseph Early&#xA;March 2023&#xA;Mastering Subplot Legends in Matplotlib A tutorial on how to create shared subplot legends in Matplotlib. Python code provided in a Jupyter notebook.&#xA;Newsweek, Pandora Dewan&#xA;March 2023 Scientists Are Now Teaching AI How To Read Human Minds Artificial Intelligence (AI) can read your mind.</description>
     </item>
     <item>
       <title>About</title>
       <link>https://www.jearly.co.uk/about/</link>
       <pubDate>Tue, 08 Oct 2019 14:57:43 +0100</pubDate>
       <guid>https://www.jearly.co.uk/about/</guid>
-      <description>Bio Joseph is a doctoral student with the University of Southampton and the Alan Turing Institute. He completed an Integrated MEng Computer Science degree at the University of Southampton, specialising in machine learning. Joseph continued to pursue his interest in machine learning and is now in the final year of his PhD. His PhD research focuses on interpretable machine learning – the process of unpacking the “black box” of artificial intelligence and understanding why models exhibit certain behaviours.</description>
+      <description>Bio Joseph is currently an AI Research Engineer at Helsing - AI to serve our democracies. He completed a PhD with the University of Southampton and the Alan Turing Institute, and an Integrated MEng Computer Science degree at the University of Southampton, specialising in machine learning. He was awarded a first-class degree, and won the Winton Capital Management Prize for top student in Computer Science and the prize for best Master&#39;s Project.</description>
     </item>
   </channel>
 </rss>
