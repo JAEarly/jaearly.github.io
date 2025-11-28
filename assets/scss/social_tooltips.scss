@@ -1,0 +1,75 @@
+@import "coder";
+@import "coder-dark";
+
+/* Classes for icon tool tips */
+.tooltip .tooltiptext {
+  /* Background */
+  background-color: $fg-color;
+
+  /* Shape */
+  top: 100%;
+  left: 50%;
+  margin-top: 10%;
+  padding: 5px 5px;
+  border-radius: 6px;
+
+  /* Positioning */
+  position: absolute;
+  z-index: 1;
+  transform: translateX(-50%);
+
+  /* Text formatting */
+  text-align: center;
+  text-transform: none;
+  font-family: Lato, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: medium;
+  color: $bg-color;
+
+  /* Hide initially, and we want it to fade in and out */
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  /* Prevent events - icon would stay blue when hovering */
+  pointer-events: none;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent $fg-color transparent;
+}
+
+/* Show the tooltip text when you mouse over the container */
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
+
+/* Mixin for changing tooltip colour in dark mode */
+@mixin tooltip_dark {
+  .tooltiptext {
+    background-color: $fg-color-dark;
+    color: $bg-color-dark;
+  }
+  .tooltiptext::after {
+    border-color: transparent transparent $fg-color-dark transparent;
+  }
+}
+
+/* Include tooltip dark mode as required */
+body.colorscheme-dark {
+  @include tooltip_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include tooltip_dark();
+  }
+}
+
