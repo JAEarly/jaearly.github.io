@@ -1,0 +1,99 @@
+@import "coder";
+@import "coder-dark";
+
+.card_wrapper {
+    outline: solid 1px #555555;
+    transition: all 0.08s linear;
+    margin-bottom: 30px;
+    padding: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: $alt-bg-color;
+}
+.card_wrapper:hover {
+ 	transform: scale(1.01);
+	outline: solid 3px #555555;
+}
+.card_publisher {
+	display:inline;
+	float:left;
+	letter-spacing: .2px; 
+	font-family:  Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif; 
+	font-weight: 700;
+	margin: -1% 0% 1% 0%;
+}
+.card_date {
+	display:inline;
+	float:right;
+	letter-spacing: .2px;
+	font-family:  Oxygen,Arial,Helvetica Neue,Helvetica,sans-serif;
+	font-style: italic;
+	margin: -1% 0% 1% 0%;
+}
+.card_title {
+	margin: 1% 0% 0% 0%;
+}
+.card_image {
+	width:80%; 
+	height: 370px;
+	display: block; 
+	margin: auto;
+	object-fit: cover;
+}
+.card_image_no_crop {
+	object-fit: contain;
+}
+.card_desc {
+	margin: 1% 0% 0% 0%;
+}
+
+/* Style inputs with type="text", type="email", select elements, and textareas */
+input[type=text], input[type=email], textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+	background-color: $alt-bg-color;
+	color: $fg-color;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+ 	background-color: #45a049;
+}
+
+/* Mixin for changing colours in dark mode */
+@mixin card_dark {
+	.card_wrapper {
+		background-color: $alt-bg-color-dark;
+	}
+  	input[type=text], input[type=email], textarea {
+		background-color: $alt-bg-color-dark;
+		color: $fg-color-dark;
+  	}
+}
+
+/* Include card dark mode as required */
+body.colorscheme-dark {
+  @include card_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include card_dark();
+  }
+}

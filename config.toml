@@ -1,0 +1,80 @@
+baseURL = "https://www.jearly.co.uk/"
+languageCode = "en-uk"
+title = "Dr Joseph Early"
+theme = "hugo-coder"
+googleAnalytics = "G-PMVL00VVG7"
+
+canonifyurls = true
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourdiscussshortname"
+
+[params]
+    author = "Dr Joseph Early"
+    info = "Innovation Fellow @ No10 | AI and MLEng"
+    description = "Innovation Fellow @ No10 | AI and MLEng"
+    keywords = "student,doctoral,developer,personal,ai"
+    avatarurl = "images/je_sept_2025.jpeg"
+    languagecode = "en"
+    defaultcontentlanguage = "en"
+
+    footercontent = ""
+
+    hidecredits = true
+    hidecopyright = true
+
+    rtl = false
+
+    math = true
+    customCSS = ["css/academicons.min.css"]
+    customSCSS = ["scss/custom_css.scss"]
+
+    favicon_16 = "/favicon-16x16.png"
+    favicon_32 = "/favicon-32x32.png"
+
+    colorScheme = "dark"
+
+    since = "2019"
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fa fa-github-square fa-2x"
+    weight = 1
+    url = "https://github.com/JAEarly"
+    tooltip = "GitHub"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fa fa-linkedin-square fa-2x"
+    weight = 2
+    url = "https://www.linkedin.com/in/joseph-early-ai/"
+    tooltip = "LinkedIn"
+[[params.social]]
+    name = "Google Scholar"
+    icon = "ai ai-google-scholar-square ai-2x"
+    weight = 3
+    url = "https://scholar.google.com/citations?user=iJ4qvd4AAAAJ&hl=en&authuser=1"
+    tooltip = "Google Scholar"
+# [[params.social]]
+#    name = "The Conversation"
+#    icon = "ai ai-conversation-square ai-2x"
+#    weight = 4
+#    url = "https://theconversation.com/profiles/joseph-early-1375100"
+#    tooltip = "The Conversation"
+
+# Menu links
+[[menu.main]]
+    name = "Articles"
+    weight = 1
+    url  = "/articles/"
+[[menu.main]]
+    name = "Publications"
+    weight = 2
+    url  = "/publications/"
+[[menu.main]]
+    name = "Projects"
+    weight = 3
+    url  = "/projects/"
