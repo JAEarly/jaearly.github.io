@@ -1,4 +1,4 @@
-baseURL = "https://www.jearly.co.uk/"
+baseURL = "https://jearly.co.uk/"
 languageCode = "en-uk"
 title = "Dr Joseph Early"
 theme = "hugo-coder"
