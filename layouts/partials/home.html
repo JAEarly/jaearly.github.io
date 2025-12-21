@@ -4,7 +4,11 @@
       <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
     {{ end }}
     <h1>{{ .Site.Params.author }}</h1>
+    {{ if reflect.IsSlice .Site.Params.info }}
+    <h2 style="padding-left: 32px">{{ range .Site.Params.info }}{{ . }}<br>{{ end }}</h2>
+    {{ else }}
     <h2 style="padding-left: 32px">{{ .Site.Params.info }}</h2>
+    {{ end }}
     {{ with .Site.Params.social }}
     <ul>
       {{ range sort . "Weight"}}

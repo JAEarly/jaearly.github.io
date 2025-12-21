@@ -14,10 +14,10 @@ disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "Dr Joseph Early"
-    info = "Innovation Fellow @ No10 | AI and MLEng"
+    info = ["Innovation Fellow @ No10", "AI and MLEng"]
     description = "Innovation Fellow @ No10 | AI and MLEng"
     keywords = "student,doctoral,developer,personal,ai"
-    avatarurl = "images/je_sept_2025.jpeg"
+    avatarurl = "images/je_no10_cropped.jpeg"
     languagecode = "en"
     defaultcontentlanguage = "en"
 
