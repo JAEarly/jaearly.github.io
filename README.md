@@ -1,6 +1,7 @@
 # Personal Website
 
-This repository contains the source code and built files for [jearly.co.uk](https://www.jearly.co.uk), Dr Joseph Early's personal website.
+This repository contains the source code and built files for [jearly.co.uk](https://www.jearly.co.uk), Dr Joseph Early's
+personal website.
 
 ## Technology Stack
 
@@ -49,6 +50,7 @@ hugo serve
 The site will be available at `http://localhost:1313`
 
 For drafts and future content:
+
 ```bash
 hugo serve -D -F
 ```
@@ -68,6 +70,7 @@ This generates the static site in the `public/` directory.
 The site is deployed to GitHub Pages. The `public/` directory contains the built site that GitHub Pages serves.
 
 After making changes:
+
 1. Build the site with `hugo`
 2. Commit and push both source and built files to the repository
 3. GitHub Pages will automatically serve the updated `public/` directory
@@ -75,6 +78,7 @@ After making changes:
 ## Configuration
 
 Key configuration is in `config.toml`:
+
 - Site metadata (title, description)
 - Author information
 - Social links
@@ -84,6 +88,7 @@ Key configuration is in `config.toml`:
 ## Content Management
 
 Content pages are located in the `content/` directory as HTML files:
+
 - `about.html` - About page
 - `articles.html` - Articles/blog posts
 - `publications.html` - Academic publications
@@ -94,4 +99,4 @@ Static files (CV, images, papers) go in the `static/` directory and are copied d
 
 ## License
 
-Personal website content © 2019-2025 Joseph Early
+Personal website content © 2019-2026 Joseph Early
