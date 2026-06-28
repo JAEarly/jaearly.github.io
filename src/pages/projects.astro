@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import Card from '../components/Card.astro';
+import { projects } from '../data/projects';
+---
+
+<Base
+  title="Projects · Dr Joseph Early"
+  description="Research and software projects by Dr Joseph Early."
+>
+  <div class="page-layout">
+  <div class="container">
+    <div class="page-header">
+      <h1>Projects</h1>
+    </div>
+    <div class="scroll-area">
+      <div class="card-grid">
+        {projects.map((p) => (
+          <Card
+            publisher={p.publisher}
+            date={p.date}
+            image={p.image}
+            title={p.title}
+            desc={p.desc}
+            url={p.url}
+            noCrop={p.noCrop}
+          />
+        ))}
+      </div>
+    </div>
+  </div>
+  </div>
+</Base>
