@@ -1,0 +1,149 @@
+export interface Paper {
+  venue: string;
+  date: string;
+  title: string;
+  url: string;
+  pdf?: string;
+  authors: string;
+  abstract: string;
+}
+
+export const papers: Paper[] = [
+  {
+    venue: 'University of Southampton; PhD Thesis',
+    date: 'June 2024',
+    title: 'Interpretable Multiple Instance Learning',
+    url: 'https://eprints.soton.ac.uk/490767/1/JE_Doctoral_Thesis_PDFA.pdf',
+    pdf: '/papers/JE_Doctoral_Thesis.pdf',
+    authors: 'Joseph Early',
+    abstract:
+      'With the rising use of Artificial Intelligence (AI) and Machine Learning (ML) methods, there comes an increasing need to understand how automated systems make decisions. Interpretable ML provides insight into the underlying reasoning behind AI and ML models while not stifling their predictive performance. Doing so is important for many reasons, such as facilitating trust, increasing transparency, and providing improved collaboration and control through a better understanding of automated decision-making. Interpretability is very relevant across many ML paradigms and application domains...',
+  },
+  {
+    venue: 'Environmental Data Science',
+    date: 'December 2023',
+    title:
+      'Extending Scene-to-Patch Models: Multi-resolution Multiple Instance Learning for Earth Observation',
+    url: 'https://www.cambridge.org/core/journals/environmental-data-science/article/extending-scenetopatch-models-multiresolution-multiple-instance-learning-for-earth-observation/5633006C3A9888F8BA529D34F0ACC8DA',
+    pdf: '/papers/JE_SceneToPatch_EDS.pdf',
+    authors: 'Joseph Early, Ying-Jung Deweese, Christine Evers, Sarvapali Ramchurn',
+    abstract:
+      'Land cover classification (LCC) and natural disaster response (NDR) are important issues in climate change mitigation and adaptation. Existing approaches that use machine learning with Earth observation (EO) imaging data for LCC and NDR often rely on fully annotated and segmented datasets. In this study, we extend our prior work on Scene-to-Patch models: an alternative machine learning approach for EO that utilizes Multiple Instance Learning (MIL)...',
+  },
+  {
+    venue: 'ICLR 2024',
+    date: 'November 2023',
+    title:
+      'Inherently Interpretable Time Series Classification via Multiple Instance Learning',
+    url: 'https://arxiv.org/abs/2311.10049',
+    pdf: '/papers/JE_MILLET_arXiv.pdf',
+    authors:
+      'Joseph Early, Gavin KC Cheung, Kurt Cutajar, Hanting Xie, Jas Kandola, Niall Twomey',
+    abstract:
+      'Conventional Time Series Classification (TSC) methods are often black boxes that obscure inherent interpretation of their decision-making processes. In this work, we leverage Multiple Instance Learning (MIL) to overcome this issue, and propose a new framework called MILLET: Multiple Instance Learning for Locally Explainable Time series classification. We apply MILLET to existing deep learning TSC models and show how they become inherently interpretable without compromising (and in some cases, even improving) predictive performance.',
+  },
+  {
+    venue: 'SCRIPTed: A Journal of Law, Technology, and Society',
+    date: 'February 2023',
+    title:
+      'A Risk-based Approach to AI Regulation: System Categorisation and Explainable AI Practices',
+    url: 'https://script-ed.org/article/a-risk-based-approach-to-ai-regulation-system-categorisation-and-explainable-ai-practices/',
+    pdf: '/papers/KG_XaiRegulation_SCRIPTed.pdf',
+    authors: 'Keri Grieman, Joseph Early',
+    abstract:
+      'The regulation of artificial intelligence (AI) presents a challenging new legal frontier that is only just beginning to be addressed around the world. This article provides an examination of why regulation of AI is difficult, with a particular focus on understanding the reasoning behind automated decisions. We go on to propose a flexible, risk-based categorisation for AI based on system inputs and outputs, and incorporate explainable AI (XAI) into our novel categorisation to provide the beginnings of a functional and scalable AI regulatory framework.',
+  },
+  {
+    venue: 'AAMAS 2023',
+    date: 'February 2023',
+    title:
+      'Inferring Player Location in Sports Matches: Multi-Agent Spatial Imputation from Limited Observations',
+    url: 'https://arxiv.org/abs/2302.06569',
+    pdf: '/papers/GE_InferringPlayerLocation_AAMAS2023.pdf',
+    authors:
+      'Gregory Everett, Ryan Beal, Tim Matthews, Joseph Early, Timothy Norman, Sarvapali Ramchurn',
+    abstract:
+      'Understanding agent behaviour in Multi-Agent Systems (MAS) is an important problem in domains such as autonomous driving, disaster response, and sports analytics. Existing MAS problems typically use uniform timesteps with observations for all agents. In this work, we analyse the problem of agent location imputation, specifically posed in environments with non-uniform timesteps and limited agent observability (~95% missing values).',
+  },
+  {
+    venue: 'Tackling Climate Change with Machine Learning · Workshop at NeurIPS 2022',
+    date: 'November 2022',
+    title:
+      'Scene-to-Patch Earth Observation: Multiple Instance Learning for Land Cover Classification',
+    url: 'https://arxiv.org/abs/2211.08247',
+    pdf: '/papers/JE_SceneToPatch_NeurIPS2022-CCAI.pdf',
+    authors: 'Joseph Early, Ying-Jung Deweese, Christine Evers, Sarvapali Ramchurn',
+    abstract:
+      'Land cover classification (LCC), and monitoring how land use changes over time, is an important process in climate change mitigation and adaptation. Existing approaches that use machine learning with Earth observation data for LCC rely on fully-annotated and segmented datasets. Creating these datasets requires a large amount of effort, and a lack of suitable datasets has become an obstacle in scaling the use of LCC. In this study, we propose Scene-to-Patch models...',
+  },
+  {
+    venue: 'BMVC 2022',
+    date: 'November 2022',
+    title:
+      'Revisiting Deep Fisher Vectors: Using Fisher Information to Improve Object Classification',
+    url: 'https://eprints.soton.ac.uk/471260/',
+    authors: 'Sarah Ahmed, Tayyaba Azim, Joseph Early, Sarvapali Ramchurn',
+    abstract:
+      'Although deep learning models have become the gold standard in achieving outstanding results on a large variety of computer vision and machine learning tasks, the use of kernel methods has still not gone out of trend because of its potential to beat deep learning performances at a number of occasions. Given the potential of kernel techniques, prior works have also proposed the use of hybrid approaches combining deep learning with kernel learning to complement their respective strengths and weaknesses. This work develops this idea further by introducing an improved version of Fisher kernels...',
+  },
+  {
+    venue: 'NeurIPS 2022',
+    date: 'October 2022',
+    title:
+      'Non-Markovian Reward Modelling from Trajectory Labels via Interpretable Multiple Instance Learning',
+    url: 'https://arxiv.org/abs/2205.15367',
+    pdf: '/papers/JE_NonMarkovianRewardModelling_NeurIPS2022.pdf',
+    authors: 'Joseph Early, Tom Bewley, Christine Evers, Sarvapali Ramchurn',
+    abstract:
+      'We generalise the problem of reward modelling (RM) for reinforcement learning (RL) to handle non-Markovian rewards. Existing work assumes that human evaluators observe each step in a trajectory independently when providing feedback on agent behaviour. In this work, we remove this assumption, extending RM to include hidden state information that captures temporal dependencies in human assessment of trajectories. We then show how RM can be approached as a multiple instance learning (MIL) problem...',
+  },
+  {
+    venue: 'ICLR 2022',
+    date: 'January 2022',
+    title: 'Model Agnostic Interpretability for Multiple Instance Learning',
+    url: 'https://arxiv.org/abs/2201.11701',
+    pdf: '/papers/JE_ModelAgnosticInterpretability_ICLR2022.pdf',
+    authors: 'Joseph Early, Christine Evers, Sarvapali Ramchurn',
+    abstract:
+      'In Multiple Instance Learning (MIL), models are trained using bags of instances, where only a single label is provided for each bag. A bag label is often only determined by a handful of key instances within a bag, making it difficult to interpret what information a classifier is using to make decisions. In this work, we establish the key requirements for interpreting MIL models. We then go on to develop several model-agnostic approaches that meet these requirements...',
+  },
+  {
+    venue: 'British Journal of Surgery',
+    date: 'December 2021',
+    title:
+      'Predicting survival and response to therapy using diagnostic biopsies: A machine learning approach to facilitate treatment decisions for oesophageal adenocarcinoma',
+    url: 'https://academic.oup.com/bjs/article/108/Supplement_9/znab430.185/6462752?login=true',
+    authors: 'Saqib Rahman, Joseph Early, Ben Sharpe, et al.',
+    abstract:
+      'Standard of care for locally advanced oesophageal adenocarcinoma is neoadjuvant chemotherapy or chemoradiotherapy followed by surgery. Only a minority of patients (<25%) derive significant survival benefit from neoadjuvant treatment and there are no reliable means of establishing prior to treatment in whom this benefit will occur. Moreover, accurate prediction of survival prior to treatment is also not possible...',
+  },
+  {
+    venue: 'Nordic Yearbook of Law and Informatics',
+    date: 'November 2021',
+    title: 'Non-Asimov Explanations Regulating AI Through Transparency',
+    url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3970518',
+    pdf: '/papers/JE_NonAsimovExplanations_2021.pdf',
+    authors: 'Chris Reed, Keri Grieman, Joseph Early',
+    abstract:
+      "An important part of law and regulation is demanding explanations for actual and potential failures. We ask questions like: What happened (or might happen) to cause this failure? And why did (or might) it happen? These are disguised normative questions – they really ask what ought to have happened, and how the humans involved ought to have behaved. If we ask the same questions about AI systems we run into two difficulties. The first is what might be described as the 'black box' problem...",
+  },
+  {
+    venue: 'European Journal of Surgical Oncology',
+    date: 'November 2020',
+    title:
+      'Predicting response to neoadjuvant therapy using image capture from diagnostic biopsies of oesophageal adenocarcinoma',
+    url: 'https://www.sciencedirect.com/science/article/pii/S0748798320309197?via%3Dihub',
+    authors: 'Saqib Rahman, Joseph Early, Matt De Vries, et al.',
+    abstract:
+      'In locally advanced oesophageal adenocarcinoma, only a minority of patients (<25%) derive significant survival benefit from neoadjuvant treatment and there are no reliable means of establishing prior to treatment in whom this benefit will occur. In this study, we assessed the utility of features extracted from high-resolution digital microscopy of pre-treatment biopsies in predicting response to neoadjuvant therapy in a machine-learning based modelling framework.',
+  },
+  {
+    venue: 'arXiv Preprint',
+    date: 'April 2019',
+    title: 'Reducing Catastrophic Forgetting when Evolving Neural Networks',
+    url: 'https://arxiv.org/abs/1904.03178',
+    authors: 'Joseph Early',
+    abstract:
+      "A key stepping stone in the development of an artificial general intelligence is the production of agents that can perform multiple tasks at once instead of just one. Unfortunately, canonical methods are very prone to catastrophic forgetting (CF) - the act of overwriting previous knowledge about a task when learning a new task. Recent efforts have developed techniques for overcoming CF in learning systems, but no attempt has been made to apply these new techniques to evolutionary systems...",
+  },
+];

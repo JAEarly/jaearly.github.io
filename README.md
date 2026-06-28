@@ -1,12 +1,10 @@
 # Personal Website
 
-This repository contains the source code and built files for [jearly.co.uk](https://www.jearly.co.uk), Dr Joseph Early's
-personal website.
+Source for [jearly.co.uk](https://www.jearly.co.uk), Dr Joseph Early's personal website.
 
 ## Technology Stack
 
-- **Static Site Generator**: [Hugo](https://gohugo.io/)
-- **Theme**: [hugo-coder](https://themes.gohugo.io/hugo-coder/)
+- **Static Site Generator**: [Astro](https://astro.build/) (no UI framework)
 - **Hosting**: GitHub Pages
 - **Domain**: jearly.co.uk
 
@@ -14,36 +12,47 @@ personal website.
 
 ### Prerequisites
 
-- Hugo Extended (latest version recommended)
-- Git
+- Node.js 20+
+- npm
 
 ### Setup
 
-1. Clone the repository:
-   ```bash
-   git clone git@github.com:JAEarly/jaearly.github.io.git
-   cd jaearly.github.io
-   ```
+```bash
+git clone git@github.com:JAEarly/jaearly.github.io.git
+cd jaearly.github.io
+npm install
+```
 
 ### Running Locally
 
-Start the Hugo development server:
-
 ```bash
-hugo serve
+npm run dev
 ```
 
-The site will be available at `http://localhost:1313`
+The site will be available at `http://localhost:4321`
+
+### Building
+
+```bash
+npm run build    # build to ./dist
+npm run preview  # preview the built site
+```
+
+## Content
+
+All content is data-driven — no hand-written HTML required:
+
+| File                       | Description                 |
+| -------------------------- | --------------------------- |
+| `src/data/articles.ts`     | Articles and media coverage |
+| `src/data/projects.ts`     | Projects                    |
+| `src/data/publications.ts` | Academic publications       |
+| `src/data/site.ts`         | Site metadata, social links |
 
 ## Deployment
 
-The site is deployed to GitHub Pages via a GitHub Actions workflow. When changes are pushed, the workflow automatically
-builds the site with Hugo and deploys it.
-
-After making changes:
-
-1. Commit and push your source files to the repository
-2. The GitHub Actions workflow will build and deploy the site automatically
+Deployed automatically via GitHub Actions on push to `master`. The workflow builds with `npm run build` and deploys
+`./dist` to GitHub Pages.
 
 ## License
 

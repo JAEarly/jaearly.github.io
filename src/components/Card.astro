@@ -1,0 +1,31 @@
+---
+interface Props {
+  publisher: string;
+  date: string;
+  image: string;
+  title: string;
+  desc: string;
+  url: string;
+  noCrop?: boolean;
+}
+
+const { publisher, date, image, title, desc, url, noCrop = false } = Astro.props;
+---
+
+<a class="card" href={url} target="_blank" rel="noopener noreferrer">
+  <img
+    class={`card-image${noCrop ? ' no-crop' : ''}`}
+    src={image}
+    alt={title}
+    loading="lazy"
+    decoding="async"
+  />
+  <div class="card-meta">
+    <span class="card-publisher">{publisher}</span>
+    <span class="card-date">{date}</span>
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">{title}</h2>
+    <p class="card-desc">{desc}</p>
+  </div>
+</a>

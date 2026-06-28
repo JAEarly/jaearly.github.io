@@ -1,0 +1,147 @@
+export interface Article {
+  publisher: string;
+  date: string;
+  image: string;
+  title: string;
+  desc: string;
+  url: string;
+}
+
+export const articles: Article[] = [
+  {
+    publisher: 'Medium - Level Up Coding, Joseph Early',
+    date: 'March 2023',
+    image: '/images/matplotlib_subplot.webp',
+    title: 'Mastering Subplot Legends in Matplotlib',
+    desc: 'A tutorial on how to create shared subplot legends in Matplotlib. Python code provided in a Jupyter notebook.',
+    url: 'https://medium.com/gitconnected/mastering-subplot-legends-in-matplotlib-e7bd2f8f9986',
+  },
+  {
+    publisher: 'Newsweek, Pandora Dewan',
+    date: 'March 2023',
+    image: '/images/ai_mri.webp',
+    title: 'Scientists Are Now Teaching AI How To Read Human Minds',
+    desc: 'Artificial Intelligence (AI) can read your mind... if you are hooked up to an fMRI machine and it is trained on how you process visual information.',
+    url: 'https://www.newsweek.com/scientists-teaching-ai-how-read-human-minds-1786961',
+  },
+  {
+    publisher: 'BBC World Service - Digital Planet Podcast',
+    date: 'November 2022',
+    image: '/images/bbc_podcast.jpg',
+    title: 'Robots that can assemble almost anything (featuring my interview on AI for predicting suicide risk)',
+    desc: 'Robots that can assemble almost anything a step closer. Also the war of words on Wikipedia; attempts at changing the narrative. Finally can AI predict suicide risk?',
+    url: 'https://www.bbc.co.uk/programmes/w3ct31zc',
+  },
+  {
+    publisher: 'The Conversation, Joseph Early',
+    date: 'October 2022',
+    image: '/images/ai_suicide.jpeg',
+    title: 'AI could help predict suicides – but rushing the technology could lead to big mistakes',
+    desc: 'AI has great potential to save the lives of mental health patients, but care must be taken to ensure it\'s used safely and correctly.',
+    url: 'https://theconversation.com/ai-could-help-predict-suicides-but-rushing-the-technology-could-lead-to-big-mistakes-192266',
+  },
+  {
+    publisher: 'The Conversation, Joseph Early',
+    date: 'September 2022',
+    image: '/images/sd_robots.png',
+    title: 'AI can produce prize-winning art, but it still can\'t compete with human creativity',
+    desc: 'People consider creativity to be inherently human. However, artificial intelligence (AI) has reached the stage where it can be creative as well. But could AI actually replace human artists?',
+    url: 'https://theconversation.com/ai-can-produce-prize-winning-art-but-it-still-cant-compete-with-human-creativity-190279',
+  },
+  {
+    publisher: 'Medium - Towards Data Science, Joseph Early',
+    date: 'June 2022',
+    image: '/images/xai_high_res.jpeg',
+    title: 'Explainable AI for High-Resolution Images',
+    desc: 'AI can be used to make automated decisions based on high-resolution images, but can we understand those decisions?',
+    url: 'https://medium.com/data-science/explaining-ai-for-high-resolution-images-fba0c743c76e',
+  },
+  {
+    publisher: 'Medium - Towards Data Science, Joseph Early',
+    date: 'June 2022',
+    image: '/images/inset_axes.jpeg',
+    title: 'Mastering Inset Axes in Matplotlib',
+    desc: 'Inset axes are a fantastic (and often underutilised) tool in Matplotlib. In this article, I go through the basics of using inset axes, and then give extra details on how to customize and improve your plots.',
+    url: 'https://medium.com/data-science/mastering-inset-axes-in-matplotlib-458d2fdfd0c0',
+  },
+  {
+    publisher: 'YouTube - Joseph Early',
+    date: 'May 2022',
+    image: '/images/3MT_Round1_Cover.png',
+    title: 'Three Minute Thesis - 2022 Southampton Engineering Heat Entry',
+    desc: 'The Three Minute Thesis (3MT) competition celebrates the exciting research conducted by PhD students. This my winning entry to the 2022 Southampton Engineering Heat.',
+    url: 'https://youtu.be/j3ETADBbdm4',
+  },
+  {
+    publisher: 'Medium - Towards Data Science, Joseph Early',
+    date: 'March 2022',
+    image: '/images/two_way_sign.jpg',
+    title: 'Understanding the Outputs of Multi-Layer Bi-Directional LSTMs',
+    desc: 'In this short tutorial, I break down the outputs of Multi-Layer Bi-Directional LSTMs, with an example of how to do so in PyTorch.',
+    url: 'https://medium.com/data-science/understanding-the-outputs-of-multi-layer-bi-directional-lstms-13ad99a80dd3',
+  },
+  {
+    publisher: 'Medium - Predict, Joseph Early',
+    date: 'February 2022',
+    image: '/images/robot_go_problem.png',
+    title: "Can AI solve the world's hardest Go problem?",
+    desc: 'Igo Hatsuyoron 120 is the hardest Go problem in the world. Let\'s explore the most recent developments in applying AI to this problem.',
+    url: 'https://medium.com/predict/can-ai-solve-the-worlds-hardest-go-problem-5ae9653adf31',
+  },
+  {
+    publisher: 'Medium - Towards Data Science, Joseph Early',
+    date: 'July 2020',
+    image: '/images/dog_gates.jpg',
+    title: 'The Potential of Gated Linear Networks for Online Learning',
+    desc: 'A recent publication from DeepMind brings an interesting new take on sample-efficient online learning.',
+    url: 'https://medium.com/data-science/the-potential-of-gated-linear-networks-for-online-learning-70ca5ea073a',
+  },
+  {
+    publisher: 'Medium - Towards Data Science, Joseph Early',
+    date: 'June 2020',
+    image: '/images/python_table.jpeg',
+    title: 'How to create Latex tables directly from Python code',
+    desc: 'Copying tables of results from the console into a Latex report can be tedious and error fraught — so why not automate it?',
+    url: 'https://medium.com/data-science/how-to-create-latex-tables-directly-from-python-code-5228c5cea09a',
+  },
+  {
+    publisher: 'Medium - The Startup, Joseph Early',
+    date: 'February 2020',
+    image: '/images/robots.jpg',
+    title: "What's hot in Multi-Agent Systems?",
+    desc: 'Multi-Agent Systems research has been a long standing topic in AI, but what are AI researchers in the UK currently working on?',
+    url: 'https://medium.com/swlh/whats-hot-in-multi-agent-systems-4b0f348e68bd',
+  },
+  {
+    publisher: 'Medium - Towards Data Science, Joseph Early',
+    date: 'December 2019',
+    image: '/images/ai_risk_decade.jpeg',
+    title: 'The Biggest AI Risk of the Next Decade is not a Robot Uprising',
+    desc: 'Grand generalisations about the future impacts of artificial general intelligence overshadow the more pressing issues we face today.',
+    url: 'https://medium.com/data-science/the-biggest-ai-risk-of-the-next-decade-is-not-a-robot-uprising-efb9f6bf2d31',
+  },
+  {
+    publisher: 'Medium - Towards Data Science, Joseph Early',
+    date: 'December 2019',
+    image: '/images/kaggle_github_actions.jpeg',
+    title: 'Reproducible Data Science using Kaggle and GitHub Actions',
+    desc: 'This tutorial demonstrates how to integrate Kaggle with GitHub actions to enable better reproducibility of data science projects.',
+    url: 'https://medium.com/data-science/reproducible-data-science-using-kaggle-and-github-actions-b0d78380bf8e',
+  },
+  {
+    publisher: 'Medium - Towards Data Science, Joseph Early',
+    date: 'September 2019',
+    image: '/images/medium_self_driving_attacks.jpg',
+    title: 'Your Car May Not Know When to Stop - Adversarial Attacks Against Autonomous Vehicles',
+    desc: 'Autonomous vehicles present a utopian dream of high-speed, clean and efficient transportation, but the computer vision systems at their core are susceptible to adversarial attacks.',
+    url: 'https://medium.com/data-science/your-car-may-not-know-when-to-stop-adversarial-attacks-against-autonomous-vehicles-a16df91511f4',
+  },
+  {
+    publisher: 'Medium - Becoming Human, Joseph Early',
+    date: 'July 2019',
+    image: '/images/real_time_style_interpolation.png',
+    title: 'Real Time Image Style Interpolation',
+    desc: 'My submission to the ICLR Reproducibility Challenge: a re-implementation of "A Learned Representation For Artistic Style" (Dumoulin et al., 2016).',
+    url: 'https://becominghuman.ai/real-time-image-style-interpolation-d9ec9db26a81',
+  },
+];

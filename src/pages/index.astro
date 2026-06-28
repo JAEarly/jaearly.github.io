@@ -1,0 +1,42 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site';
+---
+
+<style is:global>
+  .footer { position: fixed; bottom: 0; left: 0; right: 0; }
+</style>
+
+<Base title={site.title} description={site.description}>
+  <section class="home">
+    <img
+      class="avatar"
+      src={site.avatar}
+      alt={site.author}
+      width="148"
+      height="148"
+    />
+    <h1>{site.author}</h1>
+    <p class="home-info">
+      {site.info.map((line, i) => (
+        <Fragment>
+          {line}{i < site.info.length - 1 && <br />}
+        </Fragment>
+      ))}
+    </p>
+    <div class="home-social">
+      {site.social.map((s) => (
+        <a
+          href={s.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="tooltip"
+          aria-label={s.name}
+        >
+          <i class={s.icon} aria-hidden="true"></i>
+          <span class="tooltip-text">{s.tooltip}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

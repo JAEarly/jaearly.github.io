@@ -1,7 +1,10 @@
-# Hugo build artifacts
-.hugo_build.lock
-resources/_gen/
-public/
+# Astro build output
+dist/
+.astro/
+
+# Node
+node_modules/
+npm-debug.log*
 
 # OS files
 .DS_Store
@@ -16,3 +19,5 @@ Thumbs.db
 
 # Local environment
 .env
+.env.*
+!.env.example
