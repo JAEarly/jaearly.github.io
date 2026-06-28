@@ -9,25 +9,25 @@ import { papers } from '../data/papers';
   description="Academic papers by Dr Joseph Early."
 >
   <div class="page-layout">
-  <div class="container">
-    <div class="page-header">
-      <h1>Papers</h1>
-    </div>
     <div class="scroll-area">
-      <div class="pub-list">
-        {papers.map((p) => (
-          <PublicationCard
-            venue={p.venue}
-            date={p.date}
-            title={p.title}
-            url={p.url}
-            pdf={p.pdf}
-            authors={p.authors}
-            abstract={p.abstract}
-          />
-        ))}
+      <div class="container">
+        <div class="page-header">
+          <h1>Papers</h1>
+        </div>
+        <div class="pub-list">
+          {papers.map((p) => (
+            <PublicationCard
+              venue={p.venue}
+              date={p.date}
+              title={p.title}
+              url={p.url}
+              pdf={p.pdf}
+              authors={p.authors}
+              abstract={p.abstract}
+            />
+          ))}
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </Base>
