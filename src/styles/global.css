@@ -652,6 +652,10 @@ a.card:hover {
     grid-template-columns: 1fr;
   }
 
+  .page-header {
+    padding-top: 1.25rem;
+  }
+
   .pub-card {
     padding: 1rem 1.1rem;
   }
