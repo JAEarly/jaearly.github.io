@@ -159,29 +159,11 @@ main {
   color: var(--accent);
 }
 
-.nav-social {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  flex: 1;
-}
-
-.nav-social a {
-  color: var(--muted);
-  transition: color var(--transition);
-  font-size: 1.3rem;
-  line-height: 1;
-}
-
-.nav-social a:hover {
-  color: var(--accent);
-  text-decoration: none;
-}
-
 .nav-links {
   display: flex;
   gap: 1.75rem;
   list-style: none;
+  margin-left: auto;
 }
 
 .nav-links a {
@@ -721,10 +703,6 @@ a.card:hover {
   .nav-toggle-input:checked~.nav-links {
     max-height: 200px;
     padding: 0.5rem 1.5rem 1rem;
-  }
-
-  .nav-social {
-    flex: 0;
   }
 
   .nav-toggle-label {
