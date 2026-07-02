@@ -6,19 +6,20 @@ interface Props {
   title: string;
   desc: string;
   url: string;
-  noCrop?: boolean;
+  imagePosition?: string;
 }
 
-const { publisher, date, image, title, desc, url, noCrop = false } = Astro.props;
+const { publisher, date, image, title, desc, url, imagePosition } = Astro.props;
 ---
 
 <a class="card" href={url} target="_blank" rel="noopener noreferrer">
   <img
-    class={`card-image${noCrop ? ' no-crop' : ''}`}
+    class="card-image"
     src={image}
     alt={title}
     loading="lazy"
     decoding="async"
+    style={imagePosition ? `object-position: ${imagePosition};` : undefined}
   />
   <div class="card-meta">
     <span class="card-publisher">{publisher}</span>
