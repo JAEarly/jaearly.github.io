@@ -10,6 +10,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    publisher: "Github, Joseph Early",
+    date: "May 2026",
+    image: "/images/govuk_search_mcp.png",
+    title: "GOV.UK Search MCP Server",
+    desc: "An MCP server enabling searches across GOV.UK content, leveraging the official GOV.UK Search API over streamable HTTP. Exposes tools for keyword search, retrieving latest publications, and fetching full page content.",
+    url: "https://github.com/JAEarly/govuk-search-mcp",
+  },
+  {
     publisher: "UK Gov, Joseph Early",
     date: "February 2026",
     image: "/images/aioap.png",
