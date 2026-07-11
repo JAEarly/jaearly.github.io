@@ -10,6 +10,14 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    publisher: "jearly.co.uk, Joseph Early",
+    date: "July 2026",
+    image: "/images/osrs_pareto.png",
+    title: "OSRS Production Pareto",
+    desc: "An interactive Pareto-frontier explorer for Old School RuneScape production skills. Given your levels, it finds what to make right now for the best trade-off between XP/hr and GP/hr, pricing every strategy against live Grand Exchange data.",
+    url: "https://jearly.co.uk/osrs_pareto/",
+  },
+  {
     publisher: "Github, Joseph Early",
     date: "May 2026",
     image: "/images/govuk_search_mcp.png",
