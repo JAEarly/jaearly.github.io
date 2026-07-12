@@ -6,6 +6,7 @@ export interface Project {
   desc: string;
   url: string;
   imagePosition?: string;
+  sameTab?: boolean;
 }
 
 export const projects: Project[] = [
@@ -15,7 +16,8 @@ export const projects: Project[] = [
     image: "/images/osrs_pareto.png",
     title: "OSRS Production Pareto",
     desc: "An interactive Pareto-frontier explorer for Old School RuneScape production skills. Given your levels, it finds what to make right now for the best trade-off between XP/hr and GP/hr, pricing every strategy against live Grand Exchange data.",
-    url: "https://jearly.co.uk/osrs_pareto/",
+    url: "/projects/osrs_pareto/",
+    sameTab: true,
   },
   {
     publisher: "Github, Joseph Early",
