@@ -1,58 +1,9 @@
 ---
 import { site } from '../data/site';
-
-const pathname = Astro.url.pathname;
-const isActive = (href: string) =>
-  pathname === href || pathname.startsWith(href + '/');
-
-const navLinks = [
-  { href: '/projects/', label: 'Projects' },
-  { href: '/papers/', label: 'Papers' },
-  { href: '/articles/', label: 'Articles' },
-];
 ---
 
-<header transition:persist>
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a href="/" class="nav-title">{site.title}</a>
-
-      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" />
-      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
-        <i class="fas fa-bars icon-bars"></i>
-        <i class="fas fa-times icon-times"></i>
-      </label>
-
-      <ul class="nav-links">
-        {navLinks.map((link) => (
-          <li>
-            <a href={link.href} data-nav-href={link.href}>
-              {link.label}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </nav>
-</header>
+<site-header transition:persist site-title={site.title}></site-header>
 
 <script>
-  function updateActiveNav() {
-    const pathname = window.location.pathname;
-    document.querySelectorAll<HTMLAnchorElement>('[data-nav-href]').forEach((link) => {
-      const href = link.dataset.navHref!;
-      const active = pathname === href || pathname.startsWith(href + '/');
-      link.classList.toggle('active', active);
-    });
-  }
-
-  updateActiveNav();
-  document.addEventListener('astro:page-load', updateActiveNav);
-
-  document.querySelectorAll('.nav-links a').forEach((link) => {
-    link.addEventListener('click', () => {
-      const toggle = document.getElementById('nav-toggle') as HTMLInputElement | null;
-      if (toggle) toggle.checked = false;
-    });
-  });
+  import '@jaearly/site-ui/site-header.js';
 </script>

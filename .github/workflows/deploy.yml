@@ -26,6 +26,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Checkout osrs_pareto
+        uses: actions/checkout@v4
+        with:
+          repository: JAEarly/osrs_pareto
+          path: osrs_pareto_src
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -35,6 +41,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build osrs_pareto
+        run: |
+          npm ci
+          npm run build
+        working-directory: osrs_pareto_src
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -43,6 +55,11 @@ jobs:
         run: npm run build
         env:
           SITE: ${{ steps.pages.outputs.base_url }}
+
+      - name: Merge osrs_pareto into build output
+        run: |
+          mkdir -p dist/projects/osrs_pareto
+          cp -r osrs_pareto_src/dist/. dist/projects/osrs_pareto/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
