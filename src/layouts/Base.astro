@@ -19,28 +19,8 @@ const { title, description, image } = Astro.props;
   <head>
     <BaseHead title={title} description={description} image={image} />
     <ViewTransitions />
-    <script
-      data-goatcounter="https://endellex.goatcounter.com/count"
-      data-goatcounter-settings={JSON.stringify({ no_onload: true })}
-      async
-      src="//gc.zgo.at/count.js"></script>
     <script>
-      document.addEventListener('astro:page-load', () => {
-        window.goatcounter?.count?.({
-          path: location.pathname + location.search + location.hash,
-        });
-      });
-
-      document.addEventListener('click', (e) => {
-        const link = (e.target as Element)?.closest?.('a[target="_blank"]');
-        const href = link?.getAttribute('href');
-        if (!href) return;
-        window.goatcounter?.count?.({
-          path: href,
-          title: link.textContent?.trim() || href,
-          event: true,
-        });
-      });
+      import '@jaearly/site-ui/analytics.js';
     </script>
   </head>
   <body>
