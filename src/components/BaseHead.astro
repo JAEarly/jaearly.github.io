@@ -12,8 +12,6 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const isProd = import.meta.env.PROD;
-const GA_ID = 'G-PMVL00VVG7';
 ---
 
 <meta charset="utf-8" />
@@ -47,16 +45,3 @@ const GA_ID = 'G-PMVL00VVG7';
   href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
   crossorigin="anonymous"
 />
-
-<!-- Google Analytics (production only) -->
-{isProd && (
-  <Fragment>
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
-    <script is:inline define:vars={{ GA_ID }}>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', GA_ID);
-    </script>
-  </Fragment>
-)}
